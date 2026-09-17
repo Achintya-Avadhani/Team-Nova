@@ -1,4 +1,4 @@
-package com.hdfc.secureauth.model;
+package com.hdfc.secureauth.repository;
 
 
 import org.springframework.stereotype.Component;
@@ -13,11 +13,9 @@ public class InMemoryTokenStore {
         validTokens.add(token);
     }
 
-
     public boolean contains(String token) {
         return validTokens.contains(token);
     }
-
 
     public void remove(String token) {
         validTokens.remove(token);

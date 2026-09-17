@@ -1,7 +1,7 @@
 package com.hdfc.secureauth.service;
 
 import com.hdfc.secureauth.dto.LoginRequest;
-import com.hdfc.secureauth.model.InMemoryTokenStore;
+import com.hdfc.secureauth.repository.InMemoryTokenStore;
 import com.hdfc.secureauth.util.JwtUtil;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -12,6 +12,7 @@ public class AuthService {
 
     private final JwtUtil jwtUtil;                   // Handles token generation + validation
     private final InMemoryTokenStore tokenStore;     // Stores active tokens in memory
+    private final MockExternalLoginService mockExternalLoginService;    // MockLogin Service
 
     // Hardcoded credentials (project requirement)
     private final String VALID_USERNAME = "admin";
@@ -21,6 +22,15 @@ public class AuthService {
     public String login(LoginRequest request) {
         if (request.getUsername().equals(VALID_USERNAME)
                 && request.getPassword().equals(VALID_PASSWORD)) {
+
+
+            // Calling the external login service
+            boolean externalLoginSuccess=mockExternalLoginService.authentication();
+
+            // Handling external service failure
+            if (! externalLoginSuccess){
+                throw new RuntimeException("External Login Service Failed");
+            }
 
             // Generate JWT token
             String token = jwtUtil.generateToken(request.getUsername());
