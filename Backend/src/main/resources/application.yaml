@@ -18,3 +18,8 @@ login:
     user-limit: 5
     ip-limit: 10
     refresh-period-seconds: 60
+
+logging:
+  level:
+    root: INFO
+    com.hdfc.secureauth: INFO
