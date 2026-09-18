@@ -25,8 +25,7 @@ class SecureAuthResilienceApplicationTests {
 		request.setUsername("newuser");
 		request.setPassword("newpass123");
 
-		String token = assertDoesNotThrow(() -> authService.signup(request));
-		assertNotNull(token);
+		assertDoesNotThrow(() -> authService.signup(request));
 		assertDoesNotThrow(() -> authService.login(request));
 	}
 
