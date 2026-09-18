@@ -25,6 +25,16 @@ public class JwtUtil {
                 .compact();
     }
 
+    public String extractToken(String authorizationHeader) {
+
+        if (authorizationHeader == null ||
+                !authorizationHeader.startsWith("Bearer ")) {
+            throw new IllegalArgumentException("Invalid Authorization header");
+        }
+
+        return authorizationHeader.substring(7);
+    }
+
     public Jws<Claims> validateToken(String token) throws JwtException {
         return Jwts.parserBuilder()
                 .setSigningKey(key)

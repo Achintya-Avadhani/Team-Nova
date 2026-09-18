@@ -24,7 +24,7 @@ public class AuthService {
         registeredUsers.putIfAbsent("admin", "password123");
     }
 
-    public String signup(LoginRequest request) {
+    public void signup(LoginRequest request) {
         validateRequest(request);
 
         String username = request.getUsername();
@@ -33,7 +33,6 @@ public class AuthService {
         }
 
         registeredUsers.put(username, request.getPassword());
-        return createToken(username);
     }
 
     public String login(LoginRequest request) {

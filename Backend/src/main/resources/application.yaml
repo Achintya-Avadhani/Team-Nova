@@ -3,13 +3,6 @@ spring:
     name: secure-auth-resilience
 
 resilience4j:
-  ratelimiter:
-    instances:
-      loginRateLimiter:
-        limitForPeriod: 5
-        limitRefreshPeriod: 1m
-        timeoutDuration: 0
-
   circuitbreaker:
     instances:
       loginService:
@@ -19,3 +12,9 @@ resilience4j:
         failureRateThreshold: 50
         waitDurationInOpenState: 10s
         permittedNumberOfCallsInHalfOpenState: 2
+
+login:
+  rate-limit:
+    user-limit: 5
+    ip-limit: 10
+    refresh-period-seconds: 60
