@@ -18,6 +18,17 @@ public class AuthController {
     private final AuthService authService;
     private final JwtUtil jwtUtil;
 
+    @PostMapping("/signup")
+    public AuthResponse signup(@RequestBody LoginRequest request) {
+        log.info("Signup attempt for user: {}", request.getUsername());
+        String token = authService.signup(request);
+        log.info("User registered successfully. Token generated.");
+
+        return AuthResponse.builder()
+                .message("User registered successfully")
+                .token(token)
+                .build();
+    }
 
     @PostMapping("/login")
     public AuthResponse login(@RequestBody LoginRequest request) {
@@ -30,9 +41,6 @@ public class AuthController {
                 .token(token)
                 .build();
     }
-
-
-
 
     @GetMapping("/auth")
     public AuthResponse validateToken(@RequestHeader("Authorization") String token) {
@@ -54,9 +62,6 @@ public class AuthController {
                 .user(username)
                 .build();
     }
-
-
-
 
     @PostMapping("/logout")
     public AuthResponse logout(@RequestHeader("Authorization") String token) {
