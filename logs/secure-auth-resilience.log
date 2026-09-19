@@ -1,0 +1,350 @@
+2026-09-19 14:38:43.222 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-19 14:38:43.237 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 8112 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-19 14:38:43.237 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-19 14:38:43.255 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-19 14:38:43.255 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-19 14:38:43.713 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-19 14:38:43.718 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-19 14:38:43.719 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-19 14:38:43.719 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-19 14:38:43.728 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 473 ms
+2026-09-19 14:38:43.851 INFO  [] [restartedMain] c.h.secureauth.service.AuthService - Default admin user initialized
+2026-09-19 14:38:43.981 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: e3459d09-eb7a-4b35-9bfa-c4a5d31cb409
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-19 14:38:43.984 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-19 14:38:44.266 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-19 14:38:44.281 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-19 14:38:44.287 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-19 14:38:44.290 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 1.219 seconds (process running for 1.399)
+2026-09-19 14:40:09.096 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-19 14:40:09.103 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-19 14:40:45.665 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-19 14:40:45.678 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 8173 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-19 14:40:45.679 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-19 14:40:45.696 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-19 14:40:45.697 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-19 14:40:46.153 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-19 14:40:46.158 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-19 14:40:46.158 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-19 14:40:46.158 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-19 14:40:46.167 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 470 ms
+2026-09-19 14:40:46.290 INFO  [] [restartedMain] c.h.secureauth.service.AuthService - Default admin user initialized
+2026-09-19 14:40:46.418 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: a1e29462-ec2a-41ed-98e7-f1b2c329a89c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-19 14:40:46.421 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-19 14:40:46.703 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-19 14:40:46.719 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-19 14:40:46.725 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-19 14:40:46.728 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 1.218 seconds (process running for 1.392)
+2026-09-19 14:41:49.959 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-19 14:41:49.959 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-19 14:41:49.960 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-09-19 14:41:49.974 INFO  [e840d8af-bafd-415e-aa72-a0caefcd553a] [http-nio-0.0.0.0-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /signup
+2026-09-19 14:41:50.017 INFO  [e840d8af-bafd-415e-aa72-a0caefcd553a] [http-nio-0.0.0.0-8080-exec-1] c.h.s.controller.AuthController - Signup attempt for user: naanu@gmail.comn
+2026-09-19 14:41:50.017 INFO  [e840d8af-bafd-415e-aa72-a0caefcd553a] [http-nio-0.0.0.0-8080-exec-1] c.h.secureauth.service.AuthService - New user registered: naanu@gmail.comn
+2026-09-19 14:41:50.017 INFO  [e840d8af-bafd-415e-aa72-a0caefcd553a] [http-nio-0.0.0.0-8080-exec-1] c.h.s.controller.AuthController - User registered successfully: naanu@gmail.comn
+2026-09-19 14:41:50.026 INFO  [e840d8af-bafd-415e-aa72-a0caefcd553a] [http-nio-0.0.0.0-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Completed request: POST /signup | status=200 | duration=52ms
+2026-09-19 14:43:12.176 INFO  [ee1f79a0-5fc6-4085-a4cc-3a82f4d22f2c] [http-nio-0.0.0.0-8080-exec-3] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /login
+2026-09-19 14:43:12.179 INFO  [ee1f79a0-5fc6-4085-a4cc-3a82f4d22f2c] [http-nio-0.0.0.0-8080-exec-3] c.h.s.controller.AuthController - Login attempt for user: naanu@gmail.comn
+2026-09-19 14:43:12.182 INFO  [ee1f79a0-5fc6-4085-a4cc-3a82f4d22f2c] [http-nio-0.0.0.0-8080-exec-3] c.h.secureauth.service.AuthService - Credentials validated for user: naanu@gmail.comn
+2026-09-19 14:43:12.211 INFO  [ee1f79a0-5fc6-4085-a4cc-3a82f4d22f2c] [http-nio-0.0.0.0-8080-exec-3] c.h.secureauth.service.AuthService - Token generated and stored for user: naanu@gmail.comn
+2026-09-19 14:43:12.211 INFO  [ee1f79a0-5fc6-4085-a4cc-3a82f4d22f2c] [http-nio-0.0.0.0-8080-exec-3] c.h.s.controller.AuthController - Login successful for user: naanu@gmail.comn
+2026-09-19 14:43:12.213 INFO  [ee1f79a0-5fc6-4085-a4cc-3a82f4d22f2c] [http-nio-0.0.0.0-8080-exec-3] c.h.s.filter.RequestLoggingFilter - Completed request: POST /login | status=200 | duration=37ms
+2026-09-19 14:57:36.767 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-19 14:57:36.776 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-19 14:57:39.559 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-19 14:57:39.572 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 9606 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-19 14:57:39.575 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-19 14:57:39.593 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-19 14:57:39.595 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-19 14:57:40.040 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-19 14:57:40.044 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-19 14:57:40.044 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-19 14:57:40.044 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-19 14:57:40.053 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 458 ms
+2026-09-19 14:57:40.177 INFO  [] [restartedMain] c.h.secureauth.service.AuthService - Default admin user initialized
+2026-09-19 14:57:40.302 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 01f590aa-f1e7-40b9-8dfe-aa05e06f4b38
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-19 14:57:40.305 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-19 14:57:40.579 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-19 14:57:40.595 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-19 14:57:40.601 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-19 14:57:40.604 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 1.206 seconds (process running for 1.368)
+2026-09-19 14:57:48.302 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-19 14:57:48.302 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-19 14:57:48.303 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-09-19 14:59:50.158 INFO  [b49e866f-e5ef-42a4-9270-8292467a09a7] [http-nio-0.0.0.0-8080-exec-6] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /signup
+2026-09-19 14:59:50.226 INFO  [b49e866f-e5ef-42a4-9270-8292467a09a7] [http-nio-0.0.0.0-8080-exec-6] c.h.s.controller.AuthController - Signup attempt for user: testuser
+2026-09-19 14:59:50.226 INFO  [b49e866f-e5ef-42a4-9270-8292467a09a7] [http-nio-0.0.0.0-8080-exec-6] c.h.secureauth.service.AuthService - New user registered: testuser
+2026-09-19 14:59:50.226 INFO  [b49e866f-e5ef-42a4-9270-8292467a09a7] [http-nio-0.0.0.0-8080-exec-6] c.h.s.controller.AuthController - User registered successfully: testuser
+2026-09-19 14:59:50.235 INFO  [b49e866f-e5ef-42a4-9270-8292467a09a7] [http-nio-0.0.0.0-8080-exec-6] c.h.s.filter.RequestLoggingFilter - Completed request: POST /signup | status=200 | duration=77ms
+2026-09-19 15:01:00.959 INFO  [0dafe18f-0cee-452f-9920-3f5d561e4fdc] [http-nio-0.0.0.0-8080-exec-8] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /signup
+2026-09-19 15:01:00.961 INFO  [0dafe18f-0cee-452f-9920-3f5d561e4fdc] [http-nio-0.0.0.0-8080-exec-8] c.h.s.controller.AuthController - Signup attempt for user: testuser
+2026-09-19 15:01:00.961 WARN  [0dafe18f-0cee-452f-9920-3f5d561e4fdc] [http-nio-0.0.0.0-8080-exec-8] c.h.secureauth.service.AuthService - Signup failed. User already exists: testuser
+2026-09-19 15:01:00.964 WARN  [0dafe18f-0cee-452f-9920-3f5d561e4fdc] [http-nio-0.0.0.0-8080-exec-8] c.h.s.e.GlobalExceptionHandler - Application error: User already exists
+2026-09-19 15:01:00.970 WARN  [0dafe18f-0cee-452f-9920-3f5d561e4fdc] [http-nio-0.0.0.0-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.hdfc.secureauth.exception.ApiException: User already exists]
+2026-09-19 15:01:00.971 INFO  [0dafe18f-0cee-452f-9920-3f5d561e4fdc] [http-nio-0.0.0.0-8080-exec-8] c.h.s.filter.RequestLoggingFilter - Completed request: POST /signup | status=400 | duration=11ms
+2026-09-19 15:06:30.658 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-19 15:06:30.663 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-19 15:09:01.623 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-19 15:09:01.639 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 10270 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-19 15:09:01.639 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-19 15:09:01.657 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-19 15:09:01.657 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-19 15:09:01.825 WARN  [] [restartedMain] o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'corsConfigurationSource' defined in class path resource [com/hdfc/secureauth/config/SecurityConfig.class]: Cannot register bean definition [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=securityConfig; factoryMethodName=corsConfigurationSource; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/hdfc/secureauth/config/SecurityConfig.class]] for bean 'corsConfigurationSource' since there is already [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=corsConfig; factoryMethodName=corsConfigurationSource; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/hdfc/secureauth/config/CorsConfig.class]] bound.
+2026-09-19 15:09:01.827 INFO  [] [restartedMain] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-09-19 15:09:01.833 ERROR [] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'corsConfigurationSource', defined in class path resource [com/hdfc/secureauth/config/SecurityConfig.class], could not be registered. A bean with that name has already been defined in class path resource [com/hdfc/secureauth/config/CorsConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2026-09-19 15:09:07.141 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-19 15:09:07.151 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 10285 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-19 15:09:07.151 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-19 15:09:07.166 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-19 15:09:07.166 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-19 15:09:07.325 WARN  [] [restartedMain] o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'corsConfigurationSource' defined in class path resource [com/hdfc/secureauth/config/SecurityConfig.class]: Cannot register bean definition [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=securityConfig; factoryMethodName=corsConfigurationSource; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/hdfc/secureauth/config/SecurityConfig.class]] for bean 'corsConfigurationSource' since there is already [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=corsConfig; factoryMethodName=corsConfigurationSource; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/hdfc/secureauth/config/CorsConfig.class]] bound.
+2026-09-19 15:09:07.327 INFO  [] [restartedMain] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-09-19 15:09:07.332 ERROR [] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'corsConfigurationSource', defined in class path resource [com/hdfc/secureauth/config/SecurityConfig.class], could not be registered. A bean with that name has already been defined in class path resource [com/hdfc/secureauth/config/CorsConfig.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2026-09-19 15:12:08.595 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-19 15:12:08.611 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 10329 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-19 15:12:08.611 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-19 15:12:08.629 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-19 15:12:08.629 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-19 15:12:09.107 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-19 15:12:09.112 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-19 15:12:09.112 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-19 15:12:09.112 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-19 15:12:09.122 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 493 ms
+2026-09-19 15:12:09.248 INFO  [] [restartedMain] c.h.secureauth.service.AuthService - Default admin user initialized
+2026-09-19 15:12:09.383 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d423a07c-4bf7-4af0-aeb0-e29a0d849f7f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-19 15:12:09.386 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-19 15:12:09.667 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-19 15:12:09.683 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-19 15:12:09.688 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-19 15:12:09.691 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 1.249 seconds (process running for 1.403)
+2026-09-19 15:12:25.490 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-19 15:12:25.490 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-19 15:12:25.491 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-09-19 15:12:25.518 INFO  [416b3d19-bfdd-4c5e-b559-38f82fea5cb9] [http-nio-0.0.0.0-8080-exec-2] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /signup
+2026-09-19 15:12:25.559 INFO  [416b3d19-bfdd-4c5e-b559-38f82fea5cb9] [http-nio-0.0.0.0-8080-exec-2] c.h.s.controller.AuthController - Signup attempt for user: naanu
+2026-09-19 15:12:25.559 INFO  [416b3d19-bfdd-4c5e-b559-38f82fea5cb9] [http-nio-0.0.0.0-8080-exec-2] c.h.secureauth.service.AuthService - New user registered: naanu
+2026-09-19 15:12:25.559 INFO  [416b3d19-bfdd-4c5e-b559-38f82fea5cb9] [http-nio-0.0.0.0-8080-exec-2] c.h.s.controller.AuthController - User registered successfully: naanu
+2026-09-19 15:12:25.567 INFO  [416b3d19-bfdd-4c5e-b559-38f82fea5cb9] [http-nio-0.0.0.0-8080-exec-2] c.h.s.filter.RequestLoggingFilter - Completed request: POST /signup | status=200 | duration=49ms
+2026-09-19 15:13:50.418 INFO  [d44da959-d120-46ee-ad63-79507b06e5aa] [http-nio-0.0.0.0-8080-exec-5] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /login
+2026-09-19 15:13:50.420 INFO  [d44da959-d120-46ee-ad63-79507b06e5aa] [http-nio-0.0.0.0-8080-exec-5] c.h.s.controller.AuthController - Login attempt for user: naanu
+2026-09-19 15:13:50.423 INFO  [d44da959-d120-46ee-ad63-79507b06e5aa] [http-nio-0.0.0.0-8080-exec-5] c.h.secureauth.service.AuthService - Credentials validated for user: naanu
+2026-09-19 15:13:50.460 INFO  [d44da959-d120-46ee-ad63-79507b06e5aa] [http-nio-0.0.0.0-8080-exec-5] c.h.secureauth.service.AuthService - Token generated and stored for user: naanu
+2026-09-19 15:13:50.460 INFO  [d44da959-d120-46ee-ad63-79507b06e5aa] [http-nio-0.0.0.0-8080-exec-5] c.h.s.controller.AuthController - Login successful for user: naanu
+2026-09-19 15:13:50.462 INFO  [d44da959-d120-46ee-ad63-79507b06e5aa] [http-nio-0.0.0.0-8080-exec-5] c.h.s.filter.RequestLoggingFilter - Completed request: POST /login | status=200 | duration=44ms
+2026-09-19 15:13:56.330 INFO  [2744b7d2-9434-4577-9a0e-542c2bb84898] [http-nio-0.0.0.0-8080-exec-7] c.h.s.filter.RequestLoggingFilter - Incoming request: GET /auth
+2026-09-19 15:13:56.332 INFO  [2744b7d2-9434-4577-9a0e-542c2bb84898] [http-nio-0.0.0.0-8080-exec-7] c.h.s.controller.AuthController - Token validation request received
+2026-09-19 15:13:56.349 INFO  [2744b7d2-9434-4577-9a0e-542c2bb84898] [http-nio-0.0.0.0-8080-exec-7] c.h.s.controller.AuthController - Token valid for user: naanu
+2026-09-19 15:13:56.350 INFO  [2744b7d2-9434-4577-9a0e-542c2bb84898] [http-nio-0.0.0.0-8080-exec-7] c.h.s.filter.RequestLoggingFilter - Completed request: GET /auth | status=200 | duration=20ms
+2026-09-19 15:13:58.433 INFO  [1f321443-95df-4633-8310-e5118386405f] [http-nio-0.0.0.0-8080-exec-9] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /logout
+2026-09-19 15:13:58.434 INFO  [1f321443-95df-4633-8310-e5118386405f] [http-nio-0.0.0.0-8080-exec-9] c.h.s.controller.AuthController - Logout request received
+2026-09-19 15:13:58.434 INFO  [1f321443-95df-4633-8310-e5118386405f] [http-nio-0.0.0.0-8080-exec-9] c.h.secureauth.service.AuthService - Token removed from active token store
+2026-09-19 15:13:58.434 INFO  [1f321443-95df-4633-8310-e5118386405f] [http-nio-0.0.0.0-8080-exec-9] c.h.s.controller.AuthController - Token removed. User logged out.
+2026-09-19 15:13:58.435 INFO  [1f321443-95df-4633-8310-e5118386405f] [http-nio-0.0.0.0-8080-exec-9] c.h.s.filter.RequestLoggingFilter - Completed request: POST /logout | status=200 | duration=2ms
+2026-09-19 15:18:25.586 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-19 15:18:25.591 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-19 15:18:26.470 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-19 15:18:26.483 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 10562 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-19 15:18:26.483 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-19 15:18:26.499 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-19 15:18:26.499 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-19 15:18:26.961 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-19 15:18:26.965 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-19 15:18:26.965 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-19 15:18:26.965 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-19 15:18:26.975 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 475 ms
+2026-09-19 15:18:27.101 INFO  [] [restartedMain] c.h.secureauth.service.AuthService - Default admin user initialized
+2026-09-19 15:18:27.226 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 612524da-1858-48dc-8721-d7a1c0f5beaa
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-19 15:18:27.229 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-19 15:18:27.501 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-19 15:18:27.516 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-19 15:18:27.523 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-19 15:18:27.526 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 1.204 seconds (process running for 1.358)
+2026-09-19 15:18:37.604 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-19 15:18:37.604 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-19 15:18:37.605 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-09-19 15:18:37.631 INFO  [e0fa19fc-f84d-4997-9c75-b1cd82085e10] [http-nio-0.0.0.0-8080-exec-2] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /signup
+2026-09-19 15:18:37.669 INFO  [e0fa19fc-f84d-4997-9c75-b1cd82085e10] [http-nio-0.0.0.0-8080-exec-2] c.h.s.controller.AuthController - Signup attempt for user: naanu
+2026-09-19 15:18:37.669 INFO  [e0fa19fc-f84d-4997-9c75-b1cd82085e10] [http-nio-0.0.0.0-8080-exec-2] c.h.secureauth.service.AuthService - New user registered: naanu
+2026-09-19 15:18:37.669 INFO  [e0fa19fc-f84d-4997-9c75-b1cd82085e10] [http-nio-0.0.0.0-8080-exec-2] c.h.s.controller.AuthController - User registered successfully: naanu
+2026-09-19 15:18:37.677 INFO  [e0fa19fc-f84d-4997-9c75-b1cd82085e10] [http-nio-0.0.0.0-8080-exec-2] c.h.s.filter.RequestLoggingFilter - Completed request: POST /signup | status=200 | duration=46ms
+2026-09-19 15:21:06.843 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-19 15:21:06.848 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-19 15:27:37.401 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-19 15:27:37.417 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 11251 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-19 15:27:37.418 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-19 15:27:37.433 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-19 15:27:37.434 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-19 15:27:37.912 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-19 15:27:37.917 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-19 15:27:37.917 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-19 15:27:37.917 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-19 15:27:37.927 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 493 ms
+2026-09-19 15:27:38.052 INFO  [] [restartedMain] c.h.secureauth.service.AuthService - Default admin user initialized
+2026-09-19 15:27:38.188 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b6f0ba29-e0cf-44e9-951d-7a3a205a283d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-19 15:27:38.191 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-19 15:27:38.470 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-19 15:27:38.485 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-19 15:27:38.490 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-19 15:27:38.494 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 1.244 seconds (process running for 1.402)
+2026-09-19 15:29:18.678 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-19 15:29:18.684 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-19 15:31:00.002 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-19 15:31:00.013 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 11505 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-19 15:31:00.013 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-19 15:31:00.031 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-19 15:31:00.031 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-19 15:31:00.471 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-19 15:31:00.475 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-19 15:31:00.476 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-19 15:31:00.476 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-19 15:31:00.485 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 454 ms
+2026-09-19 15:31:00.607 INFO  [] [restartedMain] c.h.secureauth.service.AuthService - Default admin user initialized
+2026-09-19 15:31:00.731 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: fe4e68b9-62ff-4426-addd-b1df6da01c65
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-19 15:31:00.734 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-19 15:31:01.004 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-19 15:31:01.019 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-19 15:31:01.025 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-19 15:31:01.028 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 1.169 seconds (process running for 1.313)
+2026-09-19 15:32:24.483 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-19 15:32:24.490 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-19 15:34:14.497 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-19 15:34:14.509 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 11575 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-19 15:34:14.510 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-19 15:34:14.527 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-19 15:34:14.527 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-19 15:34:14.995 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-19 15:34:15.000 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-19 15:34:15.001 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-19 15:34:15.001 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-19 15:34:15.010 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 482 ms
+2026-09-19 15:34:15.135 INFO  [] [restartedMain] c.h.secureauth.service.AuthService - Default admin user initialized
+2026-09-19 15:34:15.269 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: fede1d8f-1113-47d3-b725-b0fe4916a2d1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-19 15:34:15.272 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-19 15:34:15.549 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-19 15:34:15.564 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-19 15:34:15.570 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-19 15:34:15.573 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 1.231 seconds (process running for 1.381)
+2026-09-19 17:08:03.530 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-19 17:08:03.536 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-19 17:18:42.121 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-19 17:18:42.136 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 12016 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-19 17:18:42.136 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-19 17:18:42.153 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-19 17:18:42.153 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-19 17:18:42.625 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-19 17:18:42.630 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-19 17:18:42.631 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-19 17:18:42.631 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-19 17:18:42.640 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 487 ms
+2026-09-19 17:18:42.765 INFO  [] [restartedMain] c.h.secureauth.service.AuthService - Default admin user initialized
+2026-09-19 17:18:42.899 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 6ea50581-01b3-457b-8f97-5b0a4ef281a7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-19 17:18:42.902 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-19 17:18:43.181 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-19 17:18:43.196 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-19 17:18:43.202 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-19 17:18:43.205 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 1.25 seconds (process running for 1.423)
+2026-09-19 17:19:03.180 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-19 17:19:03.181 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-19 17:19:03.182 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-09-19 17:19:03.214 INFO  [ff2cb35a-c298-41c7-b746-8bc269a7cd14] [http-nio-0.0.0.0-8080-exec-2] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /signup
+2026-09-19 17:19:03.251 INFO  [ff2cb35a-c298-41c7-b746-8bc269a7cd14] [http-nio-0.0.0.0-8080-exec-2] c.h.s.controller.AuthController - Signup attempt for user: naanu
+2026-09-19 17:19:03.251 INFO  [ff2cb35a-c298-41c7-b746-8bc269a7cd14] [http-nio-0.0.0.0-8080-exec-2] c.h.secureauth.service.AuthService - New user registered: naanu
+2026-09-19 17:19:03.251 INFO  [ff2cb35a-c298-41c7-b746-8bc269a7cd14] [http-nio-0.0.0.0-8080-exec-2] c.h.s.controller.AuthController - User registered successfully: naanu
+2026-09-19 17:19:03.258 INFO  [ff2cb35a-c298-41c7-b746-8bc269a7cd14] [http-nio-0.0.0.0-8080-exec-2] c.h.s.filter.RequestLoggingFilter - Completed request: POST /signup | status=200 | duration=44ms
+2026-09-19 17:20:17.419 INFO  [92239daf-391c-4cce-9dca-a613b7ef1797] [http-nio-0.0.0.0-8080-exec-6] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /login
+2026-09-19 17:20:17.423 INFO  [92239daf-391c-4cce-9dca-a613b7ef1797] [http-nio-0.0.0.0-8080-exec-6] c.h.s.controller.AuthController - Login attempt for user: naanu
+2026-09-19 17:20:17.426 INFO  [92239daf-391c-4cce-9dca-a613b7ef1797] [http-nio-0.0.0.0-8080-exec-6] c.h.secureauth.service.AuthService - Credentials validated for user: naanu
+2026-09-19 17:20:17.462 INFO  [92239daf-391c-4cce-9dca-a613b7ef1797] [http-nio-0.0.0.0-8080-exec-6] c.h.secureauth.service.AuthService - Token generated and stored for user: naanu
+2026-09-19 17:20:17.462 INFO  [92239daf-391c-4cce-9dca-a613b7ef1797] [http-nio-0.0.0.0-8080-exec-6] c.h.s.controller.AuthController - Login successful for user: naanu
+2026-09-19 17:20:17.464 INFO  [92239daf-391c-4cce-9dca-a613b7ef1797] [http-nio-0.0.0.0-8080-exec-6] c.h.s.filter.RequestLoggingFilter - Completed request: POST /login | status=200 | duration=45ms
+2026-09-19 17:20:19.805 INFO  [ba998c4d-09fc-4ab0-8dbc-0b8c6e056e39] [http-nio-0.0.0.0-8080-exec-8] c.h.s.filter.RequestLoggingFilter - Incoming request: GET /auth
+2026-09-19 17:20:19.806 INFO  [ba998c4d-09fc-4ab0-8dbc-0b8c6e056e39] [http-nio-0.0.0.0-8080-exec-8] c.h.s.controller.AuthController - Token validation request received
+2026-09-19 17:20:19.830 INFO  [ba998c4d-09fc-4ab0-8dbc-0b8c6e056e39] [http-nio-0.0.0.0-8080-exec-8] c.h.s.controller.AuthController - Token valid for user: naanu
+2026-09-19 17:20:19.831 INFO  [ba998c4d-09fc-4ab0-8dbc-0b8c6e056e39] [http-nio-0.0.0.0-8080-exec-8] c.h.s.filter.RequestLoggingFilter - Completed request: GET /auth | status=200 | duration=26ms
+2026-09-19 17:20:21.286 INFO  [1830e524-d6f2-4aaa-9c23-dee3e934d405] [http-nio-0.0.0.0-8080-exec-10] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /logout
+2026-09-19 17:20:21.287 INFO  [1830e524-d6f2-4aaa-9c23-dee3e934d405] [http-nio-0.0.0.0-8080-exec-10] c.h.s.controller.AuthController - Logout request received
+2026-09-19 17:20:21.287 INFO  [1830e524-d6f2-4aaa-9c23-dee3e934d405] [http-nio-0.0.0.0-8080-exec-10] c.h.secureauth.service.AuthService - Token removed from active token store
+2026-09-19 17:20:21.287 INFO  [1830e524-d6f2-4aaa-9c23-dee3e934d405] [http-nio-0.0.0.0-8080-exec-10] c.h.s.controller.AuthController - Token removed. User logged out.
+2026-09-19 17:20:21.288 INFO  [1830e524-d6f2-4aaa-9c23-dee3e934d405] [http-nio-0.0.0.0-8080-exec-10] c.h.s.filter.RequestLoggingFilter - Completed request: POST /logout | status=200 | duration=2ms
+2026-09-19 17:21:08.579 INFO  [e9639b04-edf5-4d6f-a774-470fa437a415] [http-nio-0.0.0.0-8080-exec-2] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /login
+2026-09-19 17:21:08.583 INFO  [e9639b04-edf5-4d6f-a774-470fa437a415] [http-nio-0.0.0.0-8080-exec-2] c.h.s.controller.AuthController - Login attempt for user: naanu
+2026-09-19 17:21:08.583 INFO  [e9639b04-edf5-4d6f-a774-470fa437a415] [http-nio-0.0.0.0-8080-exec-2] c.h.secureauth.service.AuthService - Credentials validated for user: naanu
+2026-09-19 17:21:08.585 INFO  [e9639b04-edf5-4d6f-a774-470fa437a415] [http-nio-0.0.0.0-8080-exec-2] c.h.secureauth.service.AuthService - Token generated and stored for user: naanu
+2026-09-19 17:21:08.585 INFO  [e9639b04-edf5-4d6f-a774-470fa437a415] [http-nio-0.0.0.0-8080-exec-2] c.h.s.controller.AuthController - Login successful for user: naanu
+2026-09-19 17:21:08.586 INFO  [e9639b04-edf5-4d6f-a774-470fa437a415] [http-nio-0.0.0.0-8080-exec-2] c.h.s.filter.RequestLoggingFilter - Completed request: POST /login | status=200 | duration=7ms
+2026-09-19 17:21:28.186 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-19 17:21:28.190 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete

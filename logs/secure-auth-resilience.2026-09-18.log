@@ -1,0 +1,598 @@
+2026-09-18 16:53:12.175 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-18 16:53:12.193 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 2874 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-18 16:53:12.194 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-18 16:53:12.209 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-18 16:53:12.209 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-18 16:53:12.698 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-18 16:53:12.703 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-09-18 16:53:12.704 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-18 16:53:12.704 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-18 16:53:12.713 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 503 ms
+2026-09-18 16:53:12.849 INFO  [] [restartedMain] c.h.secureauth.service.AuthService - Default admin user initialized
+2026-09-18 16:53:12.990 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 0610922f-dab2-4732-95da-ca7ec6cdbb49
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-18 16:53:12.993 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-18 16:53:13.285 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-18 16:53:13.301 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-09-18 16:53:13.307 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-18 16:53:13.310 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 1.297 seconds (process running for 1.486)
+2026-09-18 16:53:53.824 INFO  [] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-18 16:53:53.825 INFO  [] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-18 16:53:53.826 INFO  [] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-09-18 16:53:53.841 INFO  [d4d7da93-b670-4bd8-b6fb-f3ca3579d66b] [http-nio-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /signup
+2026-09-18 16:53:53.890 INFO  [d4d7da93-b670-4bd8-b6fb-f3ca3579d66b] [http-nio-8080-exec-1] c.h.s.controller.AuthController - Signup attempt for user: naanu
+2026-09-18 16:53:53.890 INFO  [d4d7da93-b670-4bd8-b6fb-f3ca3579d66b] [http-nio-8080-exec-1] c.h.secureauth.service.AuthService - New user registered: naanu
+2026-09-18 16:53:53.890 INFO  [d4d7da93-b670-4bd8-b6fb-f3ca3579d66b] [http-nio-8080-exec-1] c.h.s.controller.AuthController - User registered successfully: naanu
+2026-09-18 16:53:53.899 INFO  [d4d7da93-b670-4bd8-b6fb-f3ca3579d66b] [http-nio-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Completed request: POST /signup | status=200 | duration=58ms
+2026-09-18 16:54:01.623 INFO  [2efd75ba-57df-420d-b82b-ed18d32d8f77] [http-nio-8080-exec-2] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /login
+2026-09-18 16:54:01.625 INFO  [2efd75ba-57df-420d-b82b-ed18d32d8f77] [http-nio-8080-exec-2] c.h.s.controller.AuthController - Login attempt for user: naanu
+2026-09-18 16:54:01.628 INFO  [2efd75ba-57df-420d-b82b-ed18d32d8f77] [http-nio-8080-exec-2] c.h.secureauth.service.AuthService - Credentials validated for user: naanu
+2026-09-18 16:54:01.664 INFO  [2efd75ba-57df-420d-b82b-ed18d32d8f77] [http-nio-8080-exec-2] c.h.secureauth.service.AuthService - Token generated and stored for user: naanu
+2026-09-18 16:54:01.664 INFO  [2efd75ba-57df-420d-b82b-ed18d32d8f77] [http-nio-8080-exec-2] c.h.s.controller.AuthController - Login successful for user: naanu
+2026-09-18 16:54:01.665 INFO  [2efd75ba-57df-420d-b82b-ed18d32d8f77] [http-nio-8080-exec-2] c.h.s.filter.RequestLoggingFilter - Completed request: POST /login | status=200 | duration=42ms
+2026-09-18 16:54:34.532 INFO  [71380649-af5b-4ad4-b4f6-211c117c9345] [http-nio-8080-exec-3] c.h.s.filter.RequestLoggingFilter - Incoming request: GET /auth
+2026-09-18 16:54:34.533 INFO  [71380649-af5b-4ad4-b4f6-211c117c9345] [http-nio-8080-exec-3] c.h.s.controller.AuthController - Token validation request received
+2026-09-18 16:54:34.553 INFO  [71380649-af5b-4ad4-b4f6-211c117c9345] [http-nio-8080-exec-3] c.h.s.controller.AuthController - Token valid for user: naanu
+2026-09-18 16:54:34.554 INFO  [71380649-af5b-4ad4-b4f6-211c117c9345] [http-nio-8080-exec-3] c.h.s.filter.RequestLoggingFilter - Completed request: GET /auth | status=200 | duration=22ms
+2026-09-18 16:54:53.763 INFO  [824d6344-d39b-4c4f-9b02-0124cd998368] [http-nio-8080-exec-4] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /logout
+2026-09-18 16:54:53.764 INFO  [824d6344-d39b-4c4f-9b02-0124cd998368] [http-nio-8080-exec-4] c.h.s.controller.AuthController - Logout request received
+2026-09-18 16:54:53.764 INFO  [824d6344-d39b-4c4f-9b02-0124cd998368] [http-nio-8080-exec-4] c.h.secureauth.service.AuthService - Token removed from active token store
+2026-09-18 16:54:53.765 INFO  [824d6344-d39b-4c4f-9b02-0124cd998368] [http-nio-8080-exec-4] c.h.s.controller.AuthController - Token removed. User logged out.
+2026-09-18 16:54:53.766 INFO  [824d6344-d39b-4c4f-9b02-0124cd998368] [http-nio-8080-exec-4] c.h.s.filter.RequestLoggingFilter - Completed request: POST /logout | status=200 | duration=3ms
+2026-09-18 16:59:43.802 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-18 16:59:43.806 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-18 17:10:15.809 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-18 17:10:15.825 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 3437 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-18 17:10:15.825 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-18 17:10:15.841 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-18 17:10:15.841 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-18 17:10:16.336 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-18 17:10:16.340 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2026-09-18 17:10:16.341 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-18 17:10:16.341 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-18 17:10:16.350 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 509 ms
+2026-09-18 17:10:16.478 INFO  [] [restartedMain] c.h.secureauth.service.AuthService - Default admin user initialized
+2026-09-18 17:10:16.610 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 92558d07-69f1-472f-856d-653a4a83a02b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-18 17:10:16.613 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-18 17:10:16.892 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-18 17:10:16.908 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2026-09-18 17:10:16.913 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-18 17:10:16.916 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 1.275 seconds (process running for 1.428)
+2026-09-18 17:19:31.630 INFO  [] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-18 17:19:31.630 INFO  [] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-18 17:19:31.631 INFO  [] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-09-18 17:19:31.646 INFO  [a12ab434-85b4-46ba-9263-ec11a5afdba0] [http-nio-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /signup
+2026-09-18 17:19:31.692 INFO  [a12ab434-85b4-46ba-9263-ec11a5afdba0] [http-nio-8080-exec-1] c.h.s.controller.AuthController - Signup attempt for user: naanu
+2026-09-18 17:19:31.693 INFO  [a12ab434-85b4-46ba-9263-ec11a5afdba0] [http-nio-8080-exec-1] c.h.secureauth.service.AuthService - New user registered: naanu
+2026-09-18 17:19:31.693 INFO  [a12ab434-85b4-46ba-9263-ec11a5afdba0] [http-nio-8080-exec-1] c.h.s.controller.AuthController - User registered successfully: naanu
+2026-09-18 17:19:31.702 INFO  [a12ab434-85b4-46ba-9263-ec11a5afdba0] [http-nio-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Completed request: POST /signup | status=200 | duration=56ms
+2026-09-18 17:29:40.735 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-18 17:29:40.740 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-18 17:40:08.093 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-18 17:40:08.108 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 4110 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-18 17:40:08.108 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-18 17:40:08.124 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-18 17:40:08.124 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-18 17:40:08.589 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-18 17:40:08.594 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-18 17:40:08.595 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-18 17:40:08.595 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-18 17:40:08.604 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 480 ms
+2026-09-18 17:40:08.729 INFO  [] [restartedMain] c.h.secureauth.service.AuthService - Default admin user initialized
+2026-09-18 17:40:08.866 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 972483e1-4002-4827-8d0b-99819db22758
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-18 17:40:08.869 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-18 17:40:09.148 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-18 17:40:09.163 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-18 17:40:09.169 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-18 17:40:09.172 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 1.24 seconds (process running for 1.392)
+2026-09-18 17:40:15.420 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-18 17:40:15.420 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-18 17:40:15.421 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-09-18 17:40:15.435 INFO  [e6afd8ef-75d5-4b5f-97fd-b4d98ec4a74e] [http-nio-0.0.0.0-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /signup
+2026-09-18 17:40:15.480 INFO  [e6afd8ef-75d5-4b5f-97fd-b4d98ec4a74e] [http-nio-0.0.0.0-8080-exec-1] c.h.s.controller.AuthController - Signup attempt for user: naanu
+2026-09-18 17:40:15.480 INFO  [e6afd8ef-75d5-4b5f-97fd-b4d98ec4a74e] [http-nio-0.0.0.0-8080-exec-1] c.h.secureauth.service.AuthService - New user registered: naanu
+2026-09-18 17:40:15.480 INFO  [e6afd8ef-75d5-4b5f-97fd-b4d98ec4a74e] [http-nio-0.0.0.0-8080-exec-1] c.h.s.controller.AuthController - User registered successfully: naanu
+2026-09-18 17:40:15.489 INFO  [e6afd8ef-75d5-4b5f-97fd-b4d98ec4a74e] [http-nio-0.0.0.0-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Completed request: POST /signup | status=200 | duration=54ms
+2026-09-18 17:40:24.554 INFO  [54bf23c9-5e25-4e5d-aaa9-0019847b84c2] [http-nio-0.0.0.0-8080-exec-2] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /signup
+2026-09-18 17:40:24.555 INFO  [54bf23c9-5e25-4e5d-aaa9-0019847b84c2] [http-nio-0.0.0.0-8080-exec-2] c.h.s.controller.AuthController - Signup attempt for user: naanu
+2026-09-18 17:40:24.555 WARN  [54bf23c9-5e25-4e5d-aaa9-0019847b84c2] [http-nio-0.0.0.0-8080-exec-2] c.h.secureauth.service.AuthService - Signup failed. User already exists: naanu
+2026-09-18 17:40:24.558 WARN  [54bf23c9-5e25-4e5d-aaa9-0019847b84c2] [http-nio-0.0.0.0-8080-exec-2] c.h.s.e.GlobalExceptionHandler - Application error: User already exists
+2026-09-18 17:40:24.564 WARN  [54bf23c9-5e25-4e5d-aaa9-0019847b84c2] [http-nio-0.0.0.0-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.hdfc.secureauth.exception.ApiException: User already exists]
+2026-09-18 17:40:24.564 INFO  [54bf23c9-5e25-4e5d-aaa9-0019847b84c2] [http-nio-0.0.0.0-8080-exec-2] c.h.s.filter.RequestLoggingFilter - Completed request: POST /signup | status=400 | duration=10ms
+2026-09-18 17:40:37.314 INFO  [e9aa7700-b31f-4031-a2f8-e4458bc2455a] [http-nio-0.0.0.0-8080-exec-3] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /signup
+2026-09-18 17:40:37.315 INFO  [e9aa7700-b31f-4031-a2f8-e4458bc2455a] [http-nio-0.0.0.0-8080-exec-3] c.h.s.controller.AuthController - Signup attempt for user: naanu1
+2026-09-18 17:40:37.316 INFO  [e9aa7700-b31f-4031-a2f8-e4458bc2455a] [http-nio-0.0.0.0-8080-exec-3] c.h.secureauth.service.AuthService - New user registered: naanu1
+2026-09-18 17:40:37.316 INFO  [e9aa7700-b31f-4031-a2f8-e4458bc2455a] [http-nio-0.0.0.0-8080-exec-3] c.h.s.controller.AuthController - User registered successfully: naanu1
+2026-09-18 17:40:37.317 INFO  [e9aa7700-b31f-4031-a2f8-e4458bc2455a] [http-nio-0.0.0.0-8080-exec-3] c.h.s.filter.RequestLoggingFilter - Completed request: POST /signup | status=200 | duration=3ms
+2026-09-18 17:41:53.455 INFO  [baecf611-46bf-450c-9b19-ea5f7b5141aa] [http-nio-0.0.0.0-8080-exec-5] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /signup
+2026-09-18 17:41:53.457 INFO  [baecf611-46bf-450c-9b19-ea5f7b5141aa] [http-nio-0.0.0.0-8080-exec-5] c.h.s.controller.AuthController - Signup attempt for user: naanu1
+2026-09-18 17:41:53.457 WARN  [baecf611-46bf-450c-9b19-ea5f7b5141aa] [http-nio-0.0.0.0-8080-exec-5] c.h.secureauth.service.AuthService - Signup failed. User already exists: naanu1
+2026-09-18 17:41:53.457 WARN  [baecf611-46bf-450c-9b19-ea5f7b5141aa] [http-nio-0.0.0.0-8080-exec-5] c.h.s.e.GlobalExceptionHandler - Application error: User already exists
+2026-09-18 17:41:53.458 WARN  [baecf611-46bf-450c-9b19-ea5f7b5141aa] [http-nio-0.0.0.0-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.hdfc.secureauth.exception.ApiException: User already exists]
+2026-09-18 17:41:53.458 INFO  [baecf611-46bf-450c-9b19-ea5f7b5141aa] [http-nio-0.0.0.0-8080-exec-5] c.h.s.filter.RequestLoggingFilter - Completed request: POST /signup | status=400 | duration=3ms
+2026-09-18 17:44:16.860 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-18 17:44:16.864 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-18 17:44:17.722 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-18 17:44:17.735 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 4205 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-18 17:44:17.735 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-18 17:44:17.752 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-18 17:44:17.752 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-18 17:44:18.223 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-18 17:44:18.227 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-18 17:44:18.227 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-18 17:44:18.227 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-18 17:44:18.236 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 484 ms
+2026-09-18 17:44:18.359 INFO  [] [restartedMain] c.h.secureauth.service.AuthService - Default admin user initialized
+2026-09-18 17:44:18.484 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d0fc8828-56a0-4825-b645-95fcc954bccf
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-18 17:44:18.487 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-18 17:44:18.764 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-18 17:44:18.780 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-18 17:44:18.786 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-18 17:44:18.789 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 1.21 seconds (process running for 1.359)
+2026-09-18 17:44:28.741 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-18 17:44:28.741 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-18 17:44:28.742 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-09-18 17:44:28.756 INFO  [5326ea02-7889-456d-be40-29381f2bb108] [http-nio-0.0.0.0-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /signup
+2026-09-18 17:44:28.799 INFO  [5326ea02-7889-456d-be40-29381f2bb108] [http-nio-0.0.0.0-8080-exec-1] c.h.s.controller.AuthController - Signup attempt for user: naanu1
+2026-09-18 17:44:28.799 INFO  [5326ea02-7889-456d-be40-29381f2bb108] [http-nio-0.0.0.0-8080-exec-1] c.h.secureauth.service.AuthService - New user registered: naanu1
+2026-09-18 17:44:28.799 INFO  [5326ea02-7889-456d-be40-29381f2bb108] [http-nio-0.0.0.0-8080-exec-1] c.h.s.controller.AuthController - User registered successfully: naanu1
+2026-09-18 17:44:28.808 INFO  [5326ea02-7889-456d-be40-29381f2bb108] [http-nio-0.0.0.0-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Completed request: POST /signup | status=200 | duration=52ms
+2026-09-18 17:48:40.052 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-18 17:48:40.057 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-18 17:49:19.166 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-18 17:49:19.180 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 4376 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-18 17:49:19.181 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-18 17:49:19.197 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-18 17:49:19.197 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-18 17:49:19.638 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-18 17:49:19.642 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-18 17:49:19.642 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-18 17:49:19.642 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-18 17:49:19.651 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 454 ms
+2026-09-18 17:49:19.773 INFO  [] [restartedMain] c.h.secureauth.service.AuthService - Default admin user initialized
+2026-09-18 17:49:19.896 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: b206cd81-31a6-40e6-b922-434dea62d014
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-18 17:49:19.899 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-18 17:49:20.171 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-18 17:49:20.186 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-18 17:49:20.192 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-18 17:49:20.195 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 1.171 seconds (process running for 1.317)
+2026-09-18 17:53:45.377 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-18 17:53:45.384 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-18 17:53:46.570 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-18 17:53:46.579 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 4442 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-18 17:53:46.579 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-18 17:53:46.601 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-18 17:53:46.601 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-18 17:53:47.028 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-18 17:53:47.032 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-18 17:53:47.032 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-18 17:53:47.032 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-18 17:53:47.041 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 440 ms
+2026-09-18 17:53:47.162 INFO  [] [restartedMain] c.h.secureauth.service.AuthService - Default admin user initialized
+2026-09-18 17:53:47.279 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: fd08e9b1-5d4a-483d-8b47-43fa64f8b2a6
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-18 17:53:47.282 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-18 17:53:47.549 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-18 17:53:47.564 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-18 17:53:47.570 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-18 17:53:47.573 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 1.151 seconds (process running for 1.285)
+2026-09-18 17:54:38.173 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-18 17:54:38.173 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-18 17:54:38.175 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-09-18 17:54:38.190 INFO  [8ad5ddb2-3842-4756-a066-7b6f3fc94bd7] [http-nio-0.0.0.0-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Incoming request: GET /login
+2026-09-18 17:54:38.199 ERROR [8ad5ddb2-3842-4756-a066-7b6f3fc94bd7] [http-nio-0.0.0.0-8080-exec-1] c.h.s.e.GlobalExceptionHandler - Unexpected error while processing /login
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:260)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:432)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:376)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:116)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:544)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1157)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:951)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:132)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:59)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at com.hdfc.secureauth.filter.RequestLoggingFilter.doFilterInternal(RequestLoggingFilter.java:57)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$2(FilterChainProxy.java:235)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:491)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:353)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:84)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:131)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:336)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:535)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:86)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:71)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:347)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:406)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:71)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1307)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2036)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:949)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:483)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-09-18 17:54:38.219 WARN  [8ad5ddb2-3842-4756-a066-7b6f3fc94bd7] [http-nio-0.0.0.0-8080-exec-1] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-09-18 17:54:38.220 INFO  [8ad5ddb2-3842-4756-a066-7b6f3fc94bd7] [http-nio-0.0.0.0-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Completed request: GET /login | status=500 | duration=30ms
+2026-09-18 17:54:55.519 INFO  [a992b317-9e16-49e8-af5d-57ef3d384ee1] [http-nio-0.0.0.0-8080-exec-7] c.h.s.filter.RequestLoggingFilter - Incoming request: GET /signup
+2026-09-18 17:54:55.521 ERROR [a992b317-9e16-49e8-af5d-57ef3d384ee1] [http-nio-0.0.0.0-8080-exec-7] c.h.s.e.GlobalExceptionHandler - Unexpected error while processing /signup
+org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:260)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:432)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:376)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:116)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:68)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:544)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1157)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:951)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:132)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:59)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at com.hdfc.secureauth.filter.RequestLoggingFilter.doFilterInternal(RequestLoggingFilter.java:57)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$2(FilterChainProxy.java:235)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:491)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:353)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:84)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:131)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:230)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:243)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:336)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:140)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:111)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:535)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:86)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:71)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:347)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:406)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:71)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1307)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:2036)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:74)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:949)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:483)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:74)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+2026-09-18 17:54:55.525 WARN  [a992b317-9e16-49e8-af5d-57ef3d384ee1] [http-nio-0.0.0.0-8080-exec-7] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2026-09-18 17:54:55.526 INFO  [a992b317-9e16-49e8-af5d-57ef3d384ee1] [http-nio-0.0.0.0-8080-exec-7] c.h.s.filter.RequestLoggingFilter - Completed request: GET /signup | status=500 | duration=7ms
+2026-09-18 18:08:31.429 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-18 18:08:31.431 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-18 18:08:32.692 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-18 18:08:32.703 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 4882 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-18 18:08:32.703 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-18 18:08:32.721 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-18 18:08:32.721 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-18 18:08:33.155 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-18 18:08:33.158 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-18 18:08:33.159 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-18 18:08:33.159 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-18 18:08:33.167 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 446 ms
+2026-09-18 18:08:33.294 INFO  [] [restartedMain] c.h.secureauth.service.AuthService - Default admin user initialized
+2026-09-18 18:08:33.416 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 11c04632-808a-43a5-8f06-453092ce34d5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-18 18:08:33.419 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-18 18:08:33.688 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-18 18:08:33.704 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-18 18:08:33.711 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-18 18:08:33.714 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 1.172 seconds (process running for 1.305)
+2026-09-18 18:10:48.687 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-18 18:10:48.688 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-18 18:10:48.689 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-09-18 18:10:48.703 INFO  [a340986f-5251-46ea-a60b-ed0e95032705] [http-nio-0.0.0.0-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /signup
+2026-09-18 18:10:48.743 INFO  [a340986f-5251-46ea-a60b-ed0e95032705] [http-nio-0.0.0.0-8080-exec-1] c.h.s.controller.AuthController - Signup attempt for user: naanu1
+2026-09-18 18:10:48.744 INFO  [a340986f-5251-46ea-a60b-ed0e95032705] [http-nio-0.0.0.0-8080-exec-1] c.h.secureauth.service.AuthService - New user registered: naanu1
+2026-09-18 18:10:48.744 INFO  [a340986f-5251-46ea-a60b-ed0e95032705] [http-nio-0.0.0.0-8080-exec-1] c.h.s.controller.AuthController - User registered successfully: naanu1
+2026-09-18 18:10:48.752 INFO  [a340986f-5251-46ea-a60b-ed0e95032705] [http-nio-0.0.0.0-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Completed request: POST /signup | status=200 | duration=49ms
+2026-09-18 18:12:23.433 INFO  [36535f91-566c-4624-a37d-b0e165da45e5] [http-nio-0.0.0.0-8080-exec-3] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /signup
+2026-09-18 18:12:23.434 INFO  [36535f91-566c-4624-a37d-b0e165da45e5] [http-nio-0.0.0.0-8080-exec-3] c.h.s.controller.AuthController - Signup attempt for user: naanu@gmail.comn
+2026-09-18 18:12:23.435 INFO  [36535f91-566c-4624-a37d-b0e165da45e5] [http-nio-0.0.0.0-8080-exec-3] c.h.secureauth.service.AuthService - New user registered: naanu@gmail.comn
+2026-09-18 18:12:23.435 INFO  [36535f91-566c-4624-a37d-b0e165da45e5] [http-nio-0.0.0.0-8080-exec-3] c.h.s.controller.AuthController - User registered successfully: naanu@gmail.comn
+2026-09-18 18:12:23.436 INFO  [36535f91-566c-4624-a37d-b0e165da45e5] [http-nio-0.0.0.0-8080-exec-3] c.h.s.filter.RequestLoggingFilter - Completed request: POST /signup | status=200 | duration=3ms
+2026-09-18 18:12:50.110 INFO  [3a8e53d7-8749-4d08-9c22-e068e079849f] [http-nio-0.0.0.0-8080-exec-5] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /login
+2026-09-18 18:12:50.112 INFO  [3a8e53d7-8749-4d08-9c22-e068e079849f] [http-nio-0.0.0.0-8080-exec-5] c.h.s.controller.AuthController - Login attempt for user: naanu@gmail.com
+2026-09-18 18:12:50.114 WARN  [3a8e53d7-8749-4d08-9c22-e068e079849f] [http-nio-0.0.0.0-8080-exec-5] c.h.secureauth.service.AuthService - Invalid login credentials for user: naanu@gmail.com
+2026-09-18 18:12:50.116 WARN  [3a8e53d7-8749-4d08-9c22-e068e079849f] [http-nio-0.0.0.0-8080-exec-5] c.h.s.e.GlobalExceptionHandler - Invalid credentials: Invalid username or password
+2026-09-18 18:12:50.123 WARN  [3a8e53d7-8749-4d08-9c22-e068e079849f] [http-nio-0.0.0.0-8080-exec-5] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.hdfc.secureauth.exception.InvalidCredentialsException: Invalid username or password]
+2026-09-18 18:12:50.123 INFO  [3a8e53d7-8749-4d08-9c22-e068e079849f] [http-nio-0.0.0.0-8080-exec-5] c.h.s.filter.RequestLoggingFilter - Completed request: POST /login | status=401 | duration=13ms
+2026-09-18 18:13:37.386 INFO  [db9333fd-283e-4119-9ac4-129804937d07] [http-nio-0.0.0.0-8080-exec-8] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /login
+2026-09-18 18:13:37.388 INFO  [db9333fd-283e-4119-9ac4-129804937d07] [http-nio-0.0.0.0-8080-exec-8] c.h.s.controller.AuthController - Login attempt for user: naanu@gmail.com
+2026-09-18 18:13:37.388 WARN  [db9333fd-283e-4119-9ac4-129804937d07] [http-nio-0.0.0.0-8080-exec-8] c.h.secureauth.service.AuthService - Invalid login credentials for user: naanu@gmail.com
+2026-09-18 18:13:37.389 WARN  [db9333fd-283e-4119-9ac4-129804937d07] [http-nio-0.0.0.0-8080-exec-8] c.h.s.e.GlobalExceptionHandler - Invalid credentials: Invalid username or password
+2026-09-18 18:13:37.390 WARN  [db9333fd-283e-4119-9ac4-129804937d07] [http-nio-0.0.0.0-8080-exec-8] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.hdfc.secureauth.exception.InvalidCredentialsException: Invalid username or password]
+2026-09-18 18:13:37.390 INFO  [db9333fd-283e-4119-9ac4-129804937d07] [http-nio-0.0.0.0-8080-exec-8] c.h.s.filter.RequestLoggingFilter - Completed request: POST /login | status=401 | duration=4ms
+2026-09-18 18:14:26.369 INFO  [00b148cf-da98-4b67-a3ab-ab2e6a505064] [http-nio-0.0.0.0-8080-exec-9] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /login
+2026-09-18 18:14:26.371 INFO  [00b148cf-da98-4b67-a3ab-ab2e6a505064] [http-nio-0.0.0.0-8080-exec-9] c.h.s.controller.AuthController - Login attempt for user: naanu@gmail.comn
+2026-09-18 18:14:26.371 INFO  [00b148cf-da98-4b67-a3ab-ab2e6a505064] [http-nio-0.0.0.0-8080-exec-9] c.h.secureauth.service.AuthService - Credentials validated for user: naanu@gmail.comn
+2026-09-18 18:14:26.401 INFO  [00b148cf-da98-4b67-a3ab-ab2e6a505064] [http-nio-0.0.0.0-8080-exec-9] c.h.secureauth.service.AuthService - Token generated and stored for user: naanu@gmail.comn
+2026-09-18 18:14:26.402 INFO  [00b148cf-da98-4b67-a3ab-ab2e6a505064] [http-nio-0.0.0.0-8080-exec-9] c.h.s.controller.AuthController - Login successful for user: naanu@gmail.comn
+2026-09-18 18:14:26.403 INFO  [00b148cf-da98-4b67-a3ab-ab2e6a505064] [http-nio-0.0.0.0-8080-exec-9] c.h.s.filter.RequestLoggingFilter - Completed request: POST /login | status=200 | duration=34ms
+2026-09-18 18:14:55.941 INFO  [eb6dc502-fb6e-45f4-840b-3e61cd049185] [http-nio-0.0.0.0-8080-exec-2] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /login
+2026-09-18 18:14:55.946 INFO  [eb6dc502-fb6e-45f4-840b-3e61cd049185] [http-nio-0.0.0.0-8080-exec-2] c.h.s.controller.AuthController - Login attempt for user: naanu@gmail.com
+2026-09-18 18:14:55.947 WARN  [eb6dc502-fb6e-45f4-840b-3e61cd049185] [http-nio-0.0.0.0-8080-exec-2] c.h.secureauth.service.AuthService - Invalid login credentials for user: naanu@gmail.com
+2026-09-18 18:14:55.947 WARN  [eb6dc502-fb6e-45f4-840b-3e61cd049185] [http-nio-0.0.0.0-8080-exec-2] c.h.s.e.GlobalExceptionHandler - Invalid credentials: Invalid username or password
+2026-09-18 18:14:55.948 WARN  [eb6dc502-fb6e-45f4-840b-3e61cd049185] [http-nio-0.0.0.0-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.hdfc.secureauth.exception.InvalidCredentialsException: Invalid username or password]
+2026-09-18 18:14:55.948 INFO  [eb6dc502-fb6e-45f4-840b-3e61cd049185] [http-nio-0.0.0.0-8080-exec-2] c.h.s.filter.RequestLoggingFilter - Completed request: POST /login | status=401 | duration=7ms
+2026-09-18 18:15:59.100 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-18 18:15:59.105 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-18 18:16:00.350 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-18 18:16:00.361 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 5011 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-18 18:16:00.362 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-18 18:16:00.382 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-18 18:16:00.382 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-18 18:16:00.808 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-18 18:16:00.812 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-18 18:16:00.812 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-18 18:16:00.812 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-18 18:16:00.821 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 439 ms
+2026-09-18 18:16:00.947 INFO  [] [restartedMain] c.h.secureauth.service.AuthService - Default admin user initialized
+2026-09-18 18:16:01.067 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4a1d3f24-6518-4909-b566-9cb7d29b9699
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-18 18:16:01.070 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-18 18:16:01.342 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-18 18:16:01.357 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-18 18:16:01.363 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-18 18:16:01.366 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 1.159 seconds (process running for 1.295)
+2026-09-18 18:19:40.396 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-18 18:19:40.402 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-18 18:20:09.587 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-18 18:20:09.597 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 5085 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-18 18:20:09.597 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-18 18:20:09.612 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-18 18:20:09.612 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-18 18:20:10.026 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-18 18:20:10.030 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-18 18:20:10.031 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-18 18:20:10.031 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-18 18:20:10.039 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 426 ms
+2026-09-18 18:20:10.166 INFO  [] [restartedMain] c.h.secureauth.service.AuthService - Default admin user initialized
+2026-09-18 18:20:10.286 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 9fbc0f35-8b76-4133-a44f-01c575e7e818
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-18 18:20:10.288 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-18 18:20:10.554 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-18 18:20:10.570 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-18 18:20:10.577 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-18 18:20:10.580 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 1.126 seconds (process running for 1.255)
+2026-09-18 18:20:21.845 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-18 18:20:21.846 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-18 18:20:21.846 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-09-18 18:20:21.859 INFO  [600da457-1674-4ca0-a92a-58b8fb6d5b36] [http-nio-0.0.0.0-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /signup
+2026-09-18 18:20:21.898 INFO  [600da457-1674-4ca0-a92a-58b8fb6d5b36] [http-nio-0.0.0.0-8080-exec-1] c.h.s.controller.AuthController - Signup attempt for user: naanu@gmail.comn
+2026-09-18 18:20:21.898 INFO  [600da457-1674-4ca0-a92a-58b8fb6d5b36] [http-nio-0.0.0.0-8080-exec-1] c.h.secureauth.service.AuthService - New user registered: naanu@gmail.comn
+2026-09-18 18:20:21.898 INFO  [600da457-1674-4ca0-a92a-58b8fb6d5b36] [http-nio-0.0.0.0-8080-exec-1] c.h.s.controller.AuthController - User registered successfully: naanu@gmail.comn
+2026-09-18 18:20:21.906 INFO  [600da457-1674-4ca0-a92a-58b8fb6d5b36] [http-nio-0.0.0.0-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Completed request: POST /signup | status=200 | duration=47ms
+2026-09-18 18:20:27.443 INFO  [4ab0578a-271d-48f7-aaee-be590ac252dd] [http-nio-0.0.0.0-8080-exec-2] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /signup
+2026-09-18 18:20:27.444 INFO  [4ab0578a-271d-48f7-aaee-be590ac252dd] [http-nio-0.0.0.0-8080-exec-2] c.h.s.controller.AuthController - Signup attempt for user: naanu@gmail.comn
+2026-09-18 18:20:27.445 WARN  [4ab0578a-271d-48f7-aaee-be590ac252dd] [http-nio-0.0.0.0-8080-exec-2] c.h.secureauth.service.AuthService - Signup failed. User already exists: naanu@gmail.comn
+2026-09-18 18:20:27.447 WARN  [4ab0578a-271d-48f7-aaee-be590ac252dd] [http-nio-0.0.0.0-8080-exec-2] c.h.s.e.GlobalExceptionHandler - Application error: User already exists
+2026-09-18 18:20:27.451 WARN  [4ab0578a-271d-48f7-aaee-be590ac252dd] [http-nio-0.0.0.0-8080-exec-2] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.hdfc.secureauth.exception.ApiException: User already exists]
+2026-09-18 18:20:27.452 INFO  [4ab0578a-271d-48f7-aaee-be590ac252dd] [http-nio-0.0.0.0-8080-exec-2] c.h.s.filter.RequestLoggingFilter - Completed request: POST /signup | status=400 | duration=9ms
+2026-09-18 18:20:34.973 INFO  [d44bf03d-ea9e-446b-9e10-ee9bafd12a93] [http-nio-0.0.0.0-8080-exec-3] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /login
+2026-09-18 18:20:34.976 INFO  [d44bf03d-ea9e-446b-9e10-ee9bafd12a93] [http-nio-0.0.0.0-8080-exec-3] c.h.s.controller.AuthController - Login attempt for user: naanu@gmail.comn
+2026-09-18 18:20:34.979 INFO  [d44bf03d-ea9e-446b-9e10-ee9bafd12a93] [http-nio-0.0.0.0-8080-exec-3] c.h.secureauth.service.AuthService - Credentials validated for user: naanu@gmail.comn
+2026-09-18 18:20:35.007 INFO  [d44bf03d-ea9e-446b-9e10-ee9bafd12a93] [http-nio-0.0.0.0-8080-exec-3] c.h.secureauth.service.AuthService - Token generated and stored for user: naanu@gmail.comn
+2026-09-18 18:20:35.007 INFO  [d44bf03d-ea9e-446b-9e10-ee9bafd12a93] [http-nio-0.0.0.0-8080-exec-3] c.h.s.controller.AuthController - Login successful for user: naanu@gmail.comn
+2026-09-18 18:20:35.009 INFO  [d44bf03d-ea9e-446b-9e10-ee9bafd12a93] [http-nio-0.0.0.0-8080-exec-3] c.h.s.filter.RequestLoggingFilter - Completed request: POST /login | status=200 | duration=36ms
+2026-09-18 18:27:31.959 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-18 18:27:31.964 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-18 18:57:14.309 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-18 18:57:14.328 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 5929 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-18 18:57:14.328 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-18 18:57:14.346 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-18 18:57:14.346 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-18 18:57:14.807 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-18 18:57:14.812 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-18 18:57:14.812 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-18 18:57:14.812 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-18 18:57:14.822 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 475 ms
+2026-09-18 18:57:14.952 INFO  [] [restartedMain] c.h.secureauth.service.AuthService - Default admin user initialized
+2026-09-18 18:57:15.086 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 94680a7d-4320-44e9-803a-837d5b0e2c37
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-18 18:57:15.089 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-18 18:57:15.368 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-18 18:57:15.383 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-18 18:57:15.390 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-18 18:57:15.393 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 1.235 seconds (process running for 1.386)
+2026-09-18 19:02:20.619 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-18 19:02:20.624 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
