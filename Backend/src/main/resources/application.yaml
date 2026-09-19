@@ -2,6 +2,10 @@ spring:
   application:
     name: secure-auth-resilience
 
+server:
+  address: 0.0.0.0
+  port: 8080
+
 resilience4j:
   circuitbreaker:
     instances:
