@@ -8,6 +8,10 @@ import com.hdfc.secureauth.exception.TooManyLoginAttemptsException;
 import com.hdfc.secureauth.service.AuthService;
 import com.hdfc.secureauth.service.LoginRatelimiterService;
 import com.hdfc.secureauth.util.JwtUtil;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
+import io.swagger.v3.oas.annotations.Operation;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -17,12 +21,17 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequiredArgsConstructor
 @Slf4j
+@Tag(name = "Authentication",
+description = "APIs for user signup, login, authentication and logout")
 public class AuthController {
 
     private final AuthService authService;
     private final JwtUtil jwtUtil;
     private final LoginRatelimiterService loginRatelimiterService;
 
+    @Operation(
+            summary = "Register a new user",
+            description = "Creates a new user account")
     @PostMapping("/signup")
     public AuthResponse signup(
             @Valid @RequestBody LoginRequest request) {
@@ -45,6 +54,10 @@ public class AuthController {
                 .build();
     }
 
+    @Operation(
+            summary = "Login user",
+            description = "Authenticates the user and returns a signed JWT "
+                    + "Use the Authorize button at the top of Swagger UI to provide the JWT.")
     @PostMapping("/login")
     public LoginResponse login(
             @Valid @RequestBody LoginRequest request,
@@ -88,9 +101,14 @@ public class AuthController {
                 .build();
     }
 
+    @Operation(
+            summary = "Validate JWT",
+            description = "Validates the JWT and checks whether the session is still active "
+                    + "Use the Authorize button at the top of Swagger UI to provide the JWT.")
+    @SecurityRequirement(name = "bearerAuth")
     @GetMapping("/auth")
-    public AuthResponse validateToken(
-            @RequestHeader("Authorization") String authorizationHeader) {
+    public AuthResponse validateToken(@Parameter(hidden = true)
+                                          @RequestHeader("Authorization") String authorizationHeader) {
 
         log.info("Token validation request received");
 
@@ -124,9 +142,13 @@ public class AuthController {
                 .build();
     }
 
+    @Operation(
+            summary = "Logout user",
+            description = "Invalidates the user's current JWT session")
+    @SecurityRequirement(name = "bearerAuth")
     @PostMapping("/logout")
-    public String logout(
-            @RequestHeader("Authorization") String authorizationHeader) {
+    public String logout(@Parameter(hidden = true)
+                             @RequestHeader("Authorization") String authorizationHeader) {
 
         log.info("Logout request received");
 
