@@ -11,12 +11,11 @@ import com.hdfc.secureauth.repository.InMemoryTokenStore;
 import com.hdfc.secureauth.repository.UserRepository;
 import com.hdfc.secureauth.util.JwtUtil;
 
+import io.jsonwebtoken.JwtException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.stereotype.Service;
-
-import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -80,9 +79,9 @@ public class AuthService {
             throw new ApiException("External Login Service Failed");
         }
 
-        String accessToken = jwtUtil.generateToken(username);
+        String accessToken = jwtUtil.generateaccessToken(username);
 
-        String refreshToken = UUID.randomUUID().toString();
+        String refreshToken = jwtUtil.generateRefreshToken(username);
 
         tokenStore.addToken(accessToken);
         refreshTokenStore.addToken(refreshToken, username);
@@ -141,28 +140,63 @@ public class AuthService {
     }
 
     //refresh token
-    public String refreshAccessToken(String refreshToken) {
+    public LoginResponse refreshAccessToken(String refreshToken) {
 
         if (refreshToken == null || refreshToken.isBlank()) {
             throw new InvalidTokenException("Refresh token is missing");
         }
 
-        String username = refreshTokenStore.getUsername(refreshToken);
+        try {
 
-        if (username == null) {
-            log.warn("Invalid refresh token received");
-            throw new InvalidTokenException("Invalid refresh token");
+            var parsedToken =
+                    jwtUtil.validateRefreshToken(refreshToken);
+
+            String username =
+                    parsedToken.getBody().getSubject();
+
+            if (!refreshTokenStore.contains(refreshToken)) {
+                log.warn("Refresh token not found in active store");
+
+                throw new InvalidTokenException(
+                        "Invalid or expired refresh token"
+                );
+            }
+
+            String newAccessToken =
+                    jwtUtil.generateaccessToken(username);
+
+            String newRefreshToken =
+                    jwtUtil.generateRefreshToken(username);
+
+            refreshTokenStore.remove(refreshToken);
+
+            tokenStore.addToken(newAccessToken);
+
+            refreshTokenStore.addToken(
+                    newRefreshToken,
+                    username
+            );
+
+            log.info(
+                    "Access and refresh tokens refreshed for user: {}",
+                    username
+            );
+
+
+            return LoginResponse.builder()
+                    .message("Tokens refreshed successfully")
+                    .user(username)
+                    .accessToken(newAccessToken)
+                    .refreshToken(newRefreshToken)
+                    .build();
+
+        } catch (JwtException e) {
+
+            log.warn("Invalid refresh JWT received");
+
+            throw new InvalidTokenException(
+                    "Invalid or expired refresh token"
+            );
         }
-
-        String accessToken = jwtUtil.generateToken(username);
-
-        tokenStore.addToken(accessToken);
-
-        log.info(
-                "New access token generated using refresh token for user: {}",
-                username
-        );
-
-        return accessToken;
     }
 }

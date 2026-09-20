@@ -105,15 +105,14 @@ public class AuthController {
 
         log.info("Access token refresh request received");
 
-        String accessToken =
-                authService.refreshAccessToken(request.getRefreshToken());
+        LoginResponse response =
+                authService.refreshAccessToken(
+                        request.getRefreshToken()
+                );
 
-        log.info("Access token refreshed successfully");
+        log.info("Access and refresh tokens refreshed successfully");
 
-        return LoginResponse.builder()
-                .message("Access token refreshed successfully")
-                .accessToken(accessToken)
-                .build();
+        return response;
     }
 
     @Operation(
@@ -129,7 +128,7 @@ public class AuthController {
 
         String token = jwtUtil.extractToken(authorizationHeader);
 
-        var parsedToken = jwtUtil.validateToken(token);
+        var parsedToken = jwtUtil.validateaccessToken(token);
 
         boolean isValid = authService.validate(token);
 
