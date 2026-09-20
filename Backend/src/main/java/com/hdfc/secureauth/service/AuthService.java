@@ -1,10 +1,12 @@
 package com.hdfc.secureauth.service;
 
 import com.hdfc.secureauth.dto.LoginRequest;
+import com.hdfc.secureauth.dto.LoginResponse;
 import com.hdfc.secureauth.entity.User;
 import com.hdfc.secureauth.exception.ApiException;
 import com.hdfc.secureauth.exception.InvalidCredentialsException;
 import com.hdfc.secureauth.exception.InvalidTokenException;
+import com.hdfc.secureauth.repository.InMemoryRefreshTokenStore;
 import com.hdfc.secureauth.repository.InMemoryTokenStore;
 import com.hdfc.secureauth.repository.UserRepository;
 import com.hdfc.secureauth.util.JwtUtil;
@@ -13,6 +15,8 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.stereotype.Service;
+
+import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -23,6 +27,7 @@ public class AuthService {
     private final InMemoryTokenStore tokenStore;
     private final MockExternalLoginService mockExternalLoginService;
     private final UserRepository userRepository;
+    private final InMemoryRefreshTokenStore refreshTokenStore;
 
     //signup
     public void signup(LoginRequest request) {
@@ -45,7 +50,7 @@ public class AuthService {
     }
 
 //login
-    public String login(LoginRequest request) {
+    public LoginResponse login(LoginRequest request) {
         validateRequest(request);
 
         User user = userRepository.findById(request.getUsername())
@@ -61,10 +66,10 @@ public class AuthService {
 
         log.info("Credentials validated for user: {}", request.getUsername());
 
-        return createToken(request.getUsername());
+        return createTokens(request.getUsername());
     }
 
-    private String createToken(String username) {
+    private LoginResponse createTokens(String username) {
 
         log.debug("Calling external authentication service for user: {}", username);
 
@@ -75,13 +80,22 @@ public class AuthService {
             throw new ApiException("External Login Service Failed");
         }
 
-        String token = jwtUtil.generateToken(username);
+        String accessToken = jwtUtil.generateToken(username);
 
-        tokenStore.addToken(token);
+        String refreshToken = UUID.randomUUID().toString();
+
+        tokenStore.addToken(accessToken);
+        refreshTokenStore.addToken(refreshToken, username);
+
 
         log.info("Token generated & stored for user: {}", username);
 
-        return token;
+        return LoginResponse.builder()
+                .message("Login successful")
+                .accessToken(accessToken)
+                .refreshToken(refreshToken)
+                .user(username)
+                .build();
     }
 
     private void validateRequest(LoginRequest request) {
@@ -110,14 +124,45 @@ public class AuthService {
     }
 
     //logout
-    public void logout(String token) {
+    public void logout(String accessToken, String refreshToken) {
 
-        if (token == null || token.isBlank()) {
-            throw new InvalidTokenException("Token is missing");
+        if (accessToken == null || accessToken.isBlank()) {
+            throw new InvalidTokenException("Access token is missing");
         }
 
-        tokenStore.remove(token);
+        if (refreshToken == null || refreshToken.isBlank()) {
+            throw new InvalidTokenException("Refresh token is missing");
+        }
 
-        log.info("Token removed from active token store.");
+        tokenStore.remove(accessToken);
+        refreshTokenStore.remove(refreshToken);
+
+        log.info("Access token and refresh token removed. User logged out.");
+    }
+
+    //refresh token
+    public String refreshAccessToken(String refreshToken) {
+
+        if (refreshToken == null || refreshToken.isBlank()) {
+            throw new InvalidTokenException("Refresh token is missing");
+        }
+
+        String username = refreshTokenStore.getUsername(refreshToken);
+
+        if (username == null) {
+            log.warn("Invalid refresh token received");
+            throw new InvalidTokenException("Invalid refresh token");
+        }
+
+        String accessToken = jwtUtil.generateToken(username);
+
+        tokenStore.addToken(accessToken);
+
+        log.info(
+                "New access token generated using refresh token for user: {}",
+                username
+        );
+
+        return accessToken;
     }
 }

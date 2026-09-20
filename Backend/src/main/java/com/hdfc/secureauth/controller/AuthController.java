@@ -1,8 +1,6 @@
 package com.hdfc.secureauth.controller;
 
-import com.hdfc.secureauth.dto.AuthResponse;
-import com.hdfc.secureauth.dto.LoginRequest;
-import com.hdfc.secureauth.dto.LoginResponse;
+import com.hdfc.secureauth.dto.*;
 import com.hdfc.secureauth.exception.SessionExpiredException;
 import com.hdfc.secureauth.exception.TooManyLoginAttemptsException;
 import com.hdfc.secureauth.service.AuthService;
@@ -87,17 +85,34 @@ public class AuthController {
             );
         }
 
-        String token = authService.login(request);
+        LoginResponse response=authService.login(request);
 
         log.info(
                 "Login successful for user: {}",
                 request.getUsername()
         );
 
+        return response;
+    }
+
+    @Operation(
+            summary = "Refresh access token",
+            description = "Generates a new access token using a valid refresh token"
+    )
+    @PostMapping("/refresh")
+    public LoginResponse refresh(
+            @RequestBody RefreshTokenRequest request) {
+
+        log.info("Access token refresh request received");
+
+        String accessToken =
+                authService.refreshAccessToken(request.getRefreshToken());
+
+        log.info("Access token refreshed successfully");
+
         return LoginResponse.builder()
-                .message("Login successful")
-                .token("Bearer " + token)
-                .user(request.getUsername())
+                .message("Access token refreshed successfully")
+                .accessToken(accessToken)
                 .build();
     }
 
@@ -148,13 +163,14 @@ public class AuthController {
     @SecurityRequirement(name = "bearerAuth")
     @PostMapping("/logout")
     public String logout(@Parameter(hidden = true)
-                             @RequestHeader("Authorization") String authorizationHeader) {
+                             @RequestHeader("Authorization") String authorizationHeader,
+                            @RequestBody LogoutRequest request) {
 
         log.info("Logout request received");
 
-        String token = jwtUtil.extractToken(authorizationHeader);
+        String accessToken = jwtUtil.extractToken(authorizationHeader);
 
-        authService.logout(token);
+        authService.logout(accessToken,request.getRefreshToken());
 
         log.info("Token removed. User logged out.");
 

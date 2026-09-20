@@ -2048,3 +2048,252 @@ This generated password is for development use only. Your security configuration
 2026-09-20 15:12:48.766 INFO  [] [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-09-20 15:12:48.768 INFO  [] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-09-20 15:12:48.768 INFO  [] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-09-20 16:50:02.523 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-20 16:50:02.536 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 21728 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-20 16:50:02.537 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-20 16:50:02.555 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-20 16:50:02.555 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-20 16:50:02.881 INFO  [] [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-20 16:50:02.897 INFO  [] [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2026-09-20 16:50:03.180 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-20 16:50:03.185 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-20 16:50:03.186 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-20 16:50:03.186 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-20 16:50:03.197 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 642 ms
+2026-09-20 16:50:03.329 INFO  [] [restartedMain] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-20 16:50:03.354 INFO  [] [restartedMain] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-20 16:50:03.500 INFO  [] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-20 16:50:03.511 INFO  [] [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-20 16:50:03.560 INFO  [] [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5b2a31b7
+2026-09-20 16:50:03.560 INFO  [] [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-20 16:50:03.584 INFO  [] [restartedMain] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/secureauthdb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.6
+	Default catalog/schema: secureauthdb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-20 16:50:03.878 INFO  [] [restartedMain] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-20 16:50:03.900 INFO  [] [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-20 16:50:03.993 INFO  [] [restartedMain] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-20 16:50:04.084 WARN  [] [restartedMain] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-20 16:50:04.159 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 8166b412-a826-4a9d-a629-5dec05e4b238
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-20 16:50:04.163 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-20 16:50:04.604 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-20 16:50:04.623 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-20 16:50:04.629 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-20 16:50:04.633 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 2.265 seconds (process running for 2.432)
+2026-09-20 16:50:04.656 WARN  [] [restartedMain] o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-20 16:50:04.656 WARN  [] [restartedMain] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-20 16:50:13.683 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-20 16:50:13.684 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-20 16:50:13.685 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-09-20 16:50:13.699 INFO  [1c160d82-9c62-46a6-abe9-16dcfa037321] [http-nio-0.0.0.0-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /login
+2026-09-20 16:50:13.760 INFO  [1c160d82-9c62-46a6-abe9-16dcfa037321] [http-nio-0.0.0.0-8080-exec-1] c.h.s.controller.AuthController - Login attempt for user: achi
+2026-09-20 16:50:13.786 INFO  [1c160d82-9c62-46a6-abe9-16dcfa037321] [http-nio-0.0.0.0-8080-exec-1] c.h.secureauth.service.AuthService - Credentials validated for user: achi
+2026-09-20 16:50:13.804 INFO  [1c160d82-9c62-46a6-abe9-16dcfa037321] [http-nio-0.0.0.0-8080-exec-1] c.h.secureauth.service.AuthService - Token generated & stored for user: achi
+2026-09-20 16:50:13.804 INFO  [1c160d82-9c62-46a6-abe9-16dcfa037321] [http-nio-0.0.0.0-8080-exec-1] c.h.s.controller.AuthController - Login successful for user: achi
+2026-09-20 16:50:13.817 INFO  [1c160d82-9c62-46a6-abe9-16dcfa037321] [http-nio-0.0.0.0-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Completed request: POST /login | status=200 | duration=118ms
+2026-09-20 16:54:51.342 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-20 16:54:51.351 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-20 16:54:51.355 INFO  [] [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-20 16:54:51.358 INFO  [] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-09-20 16:54:51.359 INFO  [] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-09-20 16:54:52.686 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-20 16:54:52.699 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 21842 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-20 16:54:52.699 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-20 16:54:52.714 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-20 16:54:52.714 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-20 16:54:53.058 INFO  [] [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-20 16:54:53.073 INFO  [] [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2026-09-20 16:54:53.344 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-20 16:54:53.348 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-20 16:54:53.349 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-20 16:54:53.349 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-20 16:54:53.360 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 646 ms
+2026-09-20 16:54:53.531 INFO  [] [restartedMain] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-20 16:54:53.550 INFO  [] [restartedMain] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-20 16:54:53.682 INFO  [] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-20 16:54:53.692 INFO  [] [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-20 16:54:53.741 INFO  [] [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@398907bb
+2026-09-20 16:54:53.742 INFO  [] [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-20 16:54:53.766 INFO  [] [restartedMain] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/secureauthdb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.6
+	Default catalog/schema: secureauthdb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-20 16:54:54.038 INFO  [] [restartedMain] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-20 16:54:54.066 INFO  [] [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-20 16:54:54.157 INFO  [] [restartedMain] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-20 16:54:54.254 WARN  [] [restartedMain] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-20 16:54:54.329 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4b5796b1-566f-45b7-9246-5d9558b51e27
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-20 16:54:54.333 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-20 16:54:54.805 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-20 16:54:54.825 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-20 16:54:54.831 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-20 16:54:54.835 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 2.305 seconds (process running for 2.462)
+2026-09-20 16:54:54.857 WARN  [] [restartedMain] o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-20 16:54:54.857 WARN  [] [restartedMain] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-20 16:54:55.672 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-20 16:54:55.672 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-20 16:54:55.673 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2026-09-20 16:54:55.686 INFO  [b0c77926-0a6d-4e98-9006-530d9bf5348a] [http-nio-0.0.0.0-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /login
+2026-09-20 16:54:55.737 INFO  [b0c77926-0a6d-4e98-9006-530d9bf5348a] [http-nio-0.0.0.0-8080-exec-1] c.h.s.controller.AuthController - Login attempt for user: achi
+2026-09-20 16:54:55.757 INFO  [b0c77926-0a6d-4e98-9006-530d9bf5348a] [http-nio-0.0.0.0-8080-exec-1] c.h.secureauth.service.AuthService - Credentials validated for user: achi
+2026-09-20 16:54:55.772 INFO  [b0c77926-0a6d-4e98-9006-530d9bf5348a] [http-nio-0.0.0.0-8080-exec-1] c.h.secureauth.service.AuthService - Token generated & stored for user: achi
+2026-09-20 16:54:55.772 INFO  [b0c77926-0a6d-4e98-9006-530d9bf5348a] [http-nio-0.0.0.0-8080-exec-1] c.h.s.controller.AuthController - Login successful for user: achi
+2026-09-20 16:54:55.783 INFO  [b0c77926-0a6d-4e98-9006-530d9bf5348a] [http-nio-0.0.0.0-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Completed request: POST /login | status=200 | duration=97ms
+2026-09-20 16:59:21.559 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-20 16:59:21.571 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-20 16:59:21.581 INFO  [] [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-20 16:59:21.584 INFO  [] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-09-20 16:59:21.585 INFO  [] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-09-20 17:15:09.637 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-20 17:15:09.649 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 22315 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-20 17:15:09.649 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-20 17:15:09.668 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-20 17:15:09.668 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-20 17:15:09.997 INFO  [] [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-20 17:15:10.027 INFO  [] [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 1 JPA repository interface.
+2026-09-20 17:15:10.326 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-20 17:15:10.333 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-20 17:15:10.336 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-20 17:15:10.336 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-20 17:15:10.349 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 681 ms
+2026-09-20 17:15:10.484 INFO  [] [restartedMain] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-20 17:15:10.503 INFO  [] [restartedMain] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-20 17:15:10.648 INFO  [] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-20 17:15:10.660 INFO  [] [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-20 17:15:10.706 INFO  [] [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@e1eef
+2026-09-20 17:15:10.706 INFO  [] [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-20 17:15:10.729 INFO  [] [restartedMain] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/secureauthdb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.6
+	Default catalog/schema: secureauthdb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-20 17:15:11.004 INFO  [] [restartedMain] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-20 17:15:11.036 INFO  [] [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-20 17:15:11.139 INFO  [] [restartedMain] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-20 17:15:11.232 WARN  [] [restartedMain] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-20 17:15:11.307 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: c6fd216f-db21-4846-8ba1-467dc709293b
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-20 17:15:11.310 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-20 17:15:11.759 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-20 17:15:11.780 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-20 17:15:11.786 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-20 17:15:11.791 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 2.305 seconds (process running for 2.471)
+2026-09-20 17:15:11.812 WARN  [] [restartedMain] o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-20 17:15:11.812 WARN  [] [restartedMain] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-20 17:15:18.568 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-20 17:15:18.568 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-20 17:15:18.571 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2026-09-20 17:15:18.585 INFO  [635db991-ff1a-4e31-b34c-8dbc44f22cc8] [http-nio-0.0.0.0-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /login
+2026-09-20 17:15:18.644 INFO  [635db991-ff1a-4e31-b34c-8dbc44f22cc8] [http-nio-0.0.0.0-8080-exec-1] c.h.s.controller.AuthController - Login attempt for user: achi
+2026-09-20 17:15:18.668 INFO  [635db991-ff1a-4e31-b34c-8dbc44f22cc8] [http-nio-0.0.0.0-8080-exec-1] c.h.secureauth.service.AuthService - Credentials validated for user: achi
+2026-09-20 17:15:18.686 INFO  [635db991-ff1a-4e31-b34c-8dbc44f22cc8] [http-nio-0.0.0.0-8080-exec-1] c.h.secureauth.service.AuthService - Token generated & stored for user: achi
+2026-09-20 17:15:18.687 INFO  [635db991-ff1a-4e31-b34c-8dbc44f22cc8] [http-nio-0.0.0.0-8080-exec-1] c.h.s.controller.AuthController - Login successful for user: achi
+2026-09-20 17:15:18.700 INFO  [635db991-ff1a-4e31-b34c-8dbc44f22cc8] [http-nio-0.0.0.0-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Completed request: POST /login | status=200 | duration=115ms
+2026-09-20 17:19:05.599 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-20 17:19:05.602 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-20 17:19:05.605 INFO  [] [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-20 17:19:05.610 INFO  [] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-09-20 17:19:05.611 INFO  [] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-09-20 17:19:06.854 INFO  [] [background-preinit] o.h.validator.internal.util.Version - HV000001: Hibernate Validator 9.1.3.Final
+2026-09-20 17:19:06.869 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Starting SecureAuthResilienceApplication using Java 25.0.4 with PID 22463 (/Users/ACHINTYAA/Java_Basics/Team-Nova/Backend/target/classes started by ACHINTYAA in /Users/ACHINTYAA/Java_Basics/Team-Nova)
+2026-09-20 17:19:06.870 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-09-20 17:19:06.885 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-09-20 17:19:06.885 INFO  [] [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-09-20 17:19:07.187 INFO  [] [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-20 17:19:07.202 INFO  [] [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2026-09-20 17:19:07.478 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-09-20 17:19:07.482 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-20 17:19:07.482 INFO  [] [restartedMain] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-09-20 17:19:07.482 INFO  [] [restartedMain] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-09-20 17:19:07.493 INFO  [] [restartedMain] o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 607 ms
+2026-09-20 17:19:07.629 INFO  [] [restartedMain] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-20 17:19:07.657 INFO  [] [restartedMain] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-09-20 17:19:07.801 INFO  [] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-20 17:19:07.811 INFO  [] [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-09-20 17:19:07.858 INFO  [] [restartedMain] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5f1aa275
+2026-09-20 17:19:07.859 INFO  [] [restartedMain] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-09-20 17:19:07.882 INFO  [] [restartedMain] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:postgresql://localhost:5432/secureauthdb]
+	Database driver: PostgreSQL JDBC Driver
+	Database dialect: PostgreSQLDialect
+	Database version: 18.6
+	Default catalog/schema: secureauthdb/public
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-20 17:19:08.151 INFO  [] [restartedMain] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-20 17:19:08.232 INFO  [] [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-20 17:19:08.366 INFO  [] [restartedMain] o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-20 17:19:08.461 WARN  [] [restartedMain] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-20 17:19:08.540 WARN  [] [restartedMain] o.s.b.s.a.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 453800d0-c49d-497b-ba2a-8afd9ddbcfba
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-20 17:19:08.544 INFO  [] [restartedMain] o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-09-20 17:19:09.027 INFO  [] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2026-09-20 17:19:09.055 INFO  [] [restartedMain] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2026-09-20 17:19:09.065 INFO  [] [restartedMain] o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-09-20 17:19:09.070 INFO  [] [restartedMain] c.h.s.SecureAuthResilienceApplication - Started SecureAuthResilienceApplication in 2.37 seconds (process running for 2.521)
+2026-09-20 17:19:09.097 WARN  [] [restartedMain] o.s.c.events.SpringDocAppInitializer - SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-20 17:19:09.100 WARN  [] [restartedMain] o.s.c.events.SpringDocAppInitializer - SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-20 17:19:15.711 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-20 17:19:15.711 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-09-20 17:19:15.713 INFO  [] [http-nio-0.0.0.0-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-09-20 17:19:15.729 INFO  [e37e6d6c-b678-4f5c-a69c-ee205197640c] [http-nio-0.0.0.0-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /login
+2026-09-20 17:19:15.784 INFO  [e37e6d6c-b678-4f5c-a69c-ee205197640c] [http-nio-0.0.0.0-8080-exec-1] c.h.s.controller.AuthController - Login attempt for user: achi
+2026-09-20 17:19:15.809 INFO  [e37e6d6c-b678-4f5c-a69c-ee205197640c] [http-nio-0.0.0.0-8080-exec-1] c.h.secureauth.service.AuthService - Credentials validated for user: achi
+2026-09-20 17:19:15.826 INFO  [e37e6d6c-b678-4f5c-a69c-ee205197640c] [http-nio-0.0.0.0-8080-exec-1] c.h.secureauth.service.AuthService - Token generated & stored for user: achi
+2026-09-20 17:19:15.826 INFO  [e37e6d6c-b678-4f5c-a69c-ee205197640c] [http-nio-0.0.0.0-8080-exec-1] c.h.s.controller.AuthController - Login successful for user: achi
+2026-09-20 17:19:15.838 INFO  [e37e6d6c-b678-4f5c-a69c-ee205197640c] [http-nio-0.0.0.0-8080-exec-1] c.h.s.filter.RequestLoggingFilter - Completed request: POST /login | status=200 | duration=109ms
+2026-09-20 17:19:28.769 INFO  [fb79a8c1-14d4-4185-b2f9-633bc06e0315] [http-nio-0.0.0.0-8080-exec-2] c.h.s.filter.RequestLoggingFilter - Incoming request: POST /refresh
+2026-09-20 17:19:28.773 INFO  [fb79a8c1-14d4-4185-b2f9-633bc06e0315] [http-nio-0.0.0.0-8080-exec-2] c.h.s.controller.AuthController - Access token refresh request received
+2026-09-20 17:19:28.774 INFO  [fb79a8c1-14d4-4185-b2f9-633bc06e0315] [http-nio-0.0.0.0-8080-exec-2] c.h.secureauth.service.AuthService - New access token generated using refresh token for user: achi
+2026-09-20 17:19:28.774 INFO  [fb79a8c1-14d4-4185-b2f9-633bc06e0315] [http-nio-0.0.0.0-8080-exec-2] c.h.s.controller.AuthController - Access token refreshed successfully
+2026-09-20 17:19:28.776 INFO  [fb79a8c1-14d4-4185-b2f9-633bc06e0315] [http-nio-0.0.0.0-8080-exec-2] c.h.s.filter.RequestLoggingFilter - Completed request: POST /refresh | status=200 | duration=6ms
+2026-09-20 17:27:04.091 INFO  [] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-20 17:27:04.098 INFO  [] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-09-20 17:27:04.104 INFO  [] [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-20 17:27:04.108 INFO  [] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-09-20 17:27:04.109 INFO  [] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
