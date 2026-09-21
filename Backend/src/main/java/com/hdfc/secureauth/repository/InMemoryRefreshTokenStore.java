@@ -7,22 +7,29 @@ import java.util.concurrent.ConcurrentHashMap;
 
 @Component
 public class InMemoryRefreshTokenStore {
-    private final ConcurrentHashMap<String, String> refreshTokens =
+    private final ConcurrentHashMap<String, RefreshTokenSession> refreshTokens =
             new ConcurrentHashMap<>();
 
-    public void addToken(String token, String username) {
-        refreshTokens.put(token, username);
+    public void addToken(
+            String refreshToken,
+            String username,
+            String accessToken) {
+
+        refreshTokens.put(
+                refreshToken,
+                new RefreshTokenSession(username, accessToken)
+        );
     }
 
-    public String getUsername(String token) {
-        return refreshTokens.get(token);
+    public RefreshTokenSession getSession(String refreshToken) {
+        return refreshTokens.get(refreshToken);
     }
 
-    public boolean contains(String token) {
-        return refreshTokens.containsKey(token);
+    public boolean contains(String refreshToken) {
+        return refreshTokens.containsKey(refreshToken);
     }
 
-    public void remove(String token) {
-        refreshTokens.remove(token);
+    public void remove(String refreshToken) {
+        refreshTokens.remove(refreshToken);
     }
 }
