@@ -8,6 +8,7 @@ import com.hdfc.secureauth.exception.InvalidCredentialsException;
 import com.hdfc.secureauth.exception.InvalidTokenException;
 import com.hdfc.secureauth.repository.InMemoryRefreshTokenStore;
 import com.hdfc.secureauth.repository.InMemoryTokenStore;
+import com.hdfc.secureauth.repository.RefreshTokenSession;
 import com.hdfc.secureauth.repository.UserRepository;
 import com.hdfc.secureauth.util.JwtUtil;
 
@@ -84,7 +85,7 @@ public class AuthService {
         String refreshToken = jwtUtil.generateRefreshToken(username);
 
         tokenStore.addToken(accessToken);
-        refreshTokenStore.addToken(refreshToken, username);
+        refreshTokenStore.addToken(refreshToken, username,accessToken);
 
 
         log.info("Token generated & stored for user: {}", username);
@@ -133,15 +134,36 @@ public class AuthService {
             throw new InvalidTokenException("Refresh token is missing");
         }
 
-        tokenStore.remove(accessToken);
+        RefreshTokenSession session =
+                refreshTokenStore.getSession(refreshToken);
+
+        if (session == null) {
+            throw new InvalidTokenException(
+                    "Invalid or expired refresh token"
+            );
+        }
+
+        if (!session.accessToken().equals(accessToken)) {
+
+            log.warn(
+                    "Access token does not match refresh token session"
+            );
+
+            throw new InvalidTokenException(
+                    "Access token does not match active session"
+            );
+        }
+
+        tokenStore.remove(session.accessToken());
         refreshTokenStore.remove(refreshToken);
 
-        log.info("Access token and refresh token removed. User logged out.");
+        log.info(
+                "Access token and refresh token removed. User logged out."
+        );
     }
 
     //refresh token
     public LoginResponse refreshAccessToken(String refreshToken) {
-
         if (refreshToken == null || refreshToken.isBlank()) {
             throw new InvalidTokenException("Refresh token is missing");
         }
@@ -154,7 +176,11 @@ public class AuthService {
             String username =
                     parsedToken.getBody().getSubject();
 
-            if (!refreshTokenStore.contains(refreshToken)) {
+            RefreshTokenSession session =
+                    refreshTokenStore.getSession(refreshToken);
+
+            if (session == null) {
+
                 log.warn("Refresh token not found in active store");
 
                 throw new InvalidTokenException(
@@ -162,26 +188,40 @@ public class AuthService {
                 );
             }
 
+            if (!username.equals(session.username())) {
+
+                log.warn("Refresh token username does not match session");
+
+                throw new InvalidTokenException(
+                        "Invalid refresh token session"
+                );
+            }
+
+            //Invalidate the old session
+            tokenStore.remove(session.accessToken());
+            refreshTokenStore.remove(refreshToken);
+
+
+            //  Generate the new session.
+
             String newAccessToken =
                     jwtUtil.generateaccessToken(username);
 
             String newRefreshToken =
                     jwtUtil.generateRefreshToken(username);
 
-            refreshTokenStore.remove(refreshToken);
-
             tokenStore.addToken(newAccessToken);
 
             refreshTokenStore.addToken(
                     newRefreshToken,
-                    username
+                    username,
+                    newAccessToken
             );
 
             log.info(
                     "Access and refresh tokens refreshed for user: {}",
                     username
             );
-
 
             return LoginResponse.builder()
                     .message("Tokens refreshed successfully")
@@ -197,6 +237,7 @@ public class AuthService {
             throw new InvalidTokenException(
                     "Invalid or expired refresh token"
             );
+
         }
     }
 }
