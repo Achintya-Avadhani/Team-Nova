@@ -10,8 +10,6 @@ import com.hdfc.secureauth.service.LoginRatelimiterService;
 import com.hdfc.secureauth.util.AuthCookieUtil;
 import com.hdfc.secureauth.util.JwtUtil;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.Parameter;
-import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
