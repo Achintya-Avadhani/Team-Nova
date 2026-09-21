@@ -1,43 +1,49 @@
 package com.hdfc.secureauth.controller;
 
-import com.hdfc.secureauth.dto.*;
+import com.hdfc.secureauth.dto.AuthResponse;
+import com.hdfc.secureauth.dto.LoginRequest;
+import com.hdfc.secureauth.dto.LoginResponse;
 import com.hdfc.secureauth.exception.SessionExpiredException;
 import com.hdfc.secureauth.exception.TooManyLoginAttemptsException;
 import com.hdfc.secureauth.service.AuthService;
 import com.hdfc.secureauth.service.LoginRatelimiterService;
+import com.hdfc.secureauth.util.AuthCookieUtil;
 import com.hdfc.secureauth.util.JwtUtil;
+import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
-import io.swagger.v3.oas.annotations.tags.Tag;
-import io.swagger.v3.oas.annotations.Operation;
 import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.ResponseCookie;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
 @Slf4j
-@Tag(name = "Authentication",
-description = "APIs for user signup, login, authentication and logout")
+@io.swagger.v3.oas.annotations.tags.Tag(
+        name = "Authentication",
+        description = "APIs for user signup, login, authentication and logout"
+)
 public class AuthController {
 
     private final AuthService authService;
     private final JwtUtil jwtUtil;
     private final LoginRatelimiterService loginRatelimiterService;
+    private final AuthCookieUtil authCookieUtil;
 
     @Operation(
             summary = "Register a new user",
-            description = "Creates a new user account")
+            description = "Creates a new user account"
+    )
     @PostMapping("/signup")
     public AuthResponse signup(
             @Valid @RequestBody LoginRequest request) {
 
-        log.info(
-                "Signup attempt for user: {}",
-                request.getUsername()
-        );
+        log.info("Signup attempt for user: {}", request.getUsername());
 
         authService.signup(request);
 
@@ -54,12 +60,13 @@ public class AuthController {
 
     @Operation(
             summary = "Login user",
-            description = "Authenticates the user and returns a signed JWT "
-                    + "Use the Authorize button at the top of Swagger UI to provide the JWT.")
+            description = "Authenticates the user and stores access and refresh tokens in HttpOnly cookies."
+    )
     @PostMapping("/login")
     public LoginResponse login(
             @Valid @RequestBody LoginRequest request,
-            HttpServletRequest httpRequest) {
+            HttpServletRequest httpRequest,
+            HttpServletResponse httpResponse) {
 
         log.info(
                 "Login attempt for user: {}",
@@ -85,52 +92,89 @@ public class AuthController {
             );
         }
 
-        LoginResponse response=authService.login(request);
+        LoginResponse serviceResponse =
+                authService.login(request);
+
+        setAuthenticationCookies(
+                serviceResponse,
+                httpResponse
+        );
 
         log.info(
                 "Login successful for user: {}",
                 request.getUsername()
         );
 
-        return response;
+        return LoginResponse.builder()
+                .message(serviceResponse.getMessage())
+                .user(serviceResponse.getUser())
+                .build();
     }
 
     @Operation(
             summary = "Refresh access token",
-            description = "Generates a new access token using a valid refresh token"
+            description = "Generates new access and refresh tokens using the refresh token stored in an HttpOnly cookie."
     )
     @PostMapping("/refresh")
     public LoginResponse refresh(
-            @RequestBody RefreshTokenRequest request) {
+            @CookieValue(
+                    name = AuthCookieUtil.REFRESH_TOKEN_COOKIE,
+                    required = false
+            )
+            String refreshToken,
+            HttpServletResponse httpResponse) {
 
         log.info("Access token refresh request received");
 
-        LoginResponse response =
-                authService.refreshAccessToken(
-                        request.getRefreshToken()
-                );
+        if (refreshToken == null || refreshToken.isBlank()) {
+            throw new com.hdfc.secureauth.exception.InvalidTokenException(
+                    "Refresh token is missing"
+            );
+        }
 
-        log.info("Access and refresh tokens refreshed successfully");
+        LoginResponse serviceResponse =
+                authService.refreshAccessToken(refreshToken);
 
-        return response;
+        setAuthenticationCookies(
+                serviceResponse,
+                httpResponse
+        );
+
+        log.info(
+                "Access and refresh tokens refreshed successfully"
+        );
+
+        return LoginResponse.builder()
+                .message(serviceResponse.getMessage())
+                .user(serviceResponse.getUser())
+                .build();
     }
 
     @Operation(
             summary = "Validate JWT",
-            description = "Validates the JWT and checks whether the session is still active "
-                    + "Use the Authorize button at the top of Swagger UI to provide the JWT.")
-    @SecurityRequirement(name = "bearerAuth")
+            description = "Validates the access token stored in the HttpOnly cookie."
+    )
     @GetMapping("/auth")
-    public AuthResponse validateToken(@Parameter(hidden = true)
-                                          @RequestHeader("Authorization") String authorizationHeader) {
+    public AuthResponse validateToken(
+            @CookieValue(
+                    name = AuthCookieUtil.ACCESS_TOKEN_COOKIE,
+                    required = false
+            )
+            String accessToken) {
 
         log.info("Token validation request received");
 
-        String token = jwtUtil.extractToken(authorizationHeader);
+        if (accessToken == null || accessToken.isBlank()) {
+            throw new com.hdfc.secureauth.exception.InvalidTokenException(
+                    "Access token is missing"
+            );
+        }
 
-        var parsedToken = jwtUtil.validateaccessToken(token);
+        var parsedToken =
+                jwtUtil.validateaccessToken(accessToken);
 
-        boolean isValid = authService.validate(token);
+        boolean isValid =
+                authService.validate(accessToken);
 
         if (!isValid) {
 
@@ -143,7 +187,8 @@ public class AuthController {
             );
         }
 
-        String username = parsedToken.getBody().getSubject();
+        String username =
+                parsedToken.getBody().getSubject();
 
         log.info(
                 "Token valid for user: {}",
@@ -158,21 +203,68 @@ public class AuthController {
 
     @Operation(
             summary = "Logout user",
-            description = "Invalidates the user's current JWT session")
-    @SecurityRequirement(name = "bearerAuth")
+            description = "Invalidates the user's current access and refresh token session."
+    )
     @PostMapping("/logout")
-    public String logout(@Parameter(hidden = true)
-                             @RequestHeader("Authorization") String authorizationHeader,
-                            @RequestBody LogoutRequest request) {
+    public String logout(
+            @CookieValue(
+                    name = AuthCookieUtil.ACCESS_TOKEN_COOKIE,
+                    required = false
+            )
+            String accessToken,
+            @CookieValue(
+                    name = AuthCookieUtil.REFRESH_TOKEN_COOKIE,
+                    required = false
+            )
+            String refreshToken,
+            HttpServletResponse httpResponse) {
 
         log.info("Logout request received");
 
-        String accessToken = jwtUtil.extractToken(authorizationHeader);
+        authService.logout(
+                accessToken,
+                refreshToken
+        );
 
-        authService.logout(accessToken,request.getRefreshToken());
+        httpResponse.addHeader(
+                HttpHeaders.SET_COOKIE,
+                authCookieUtil.deleteAccessTokenCookie().toString()
+        );
 
-        log.info("Token removed. User logged out.");
+        httpResponse.addHeader(
+                HttpHeaders.SET_COOKIE,
+                authCookieUtil.deleteRefreshTokenCookie().toString()
+        );
+
+        log.info(
+                "Access token and refresh token cookies cleared."
+        );
 
         return "Logged out successfully";
+    }
+
+    private void setAuthenticationCookies(
+            LoginResponse response,
+            HttpServletResponse httpResponse) {
+
+        ResponseCookie accessCookie =
+                authCookieUtil.createAccessTokenCookie(
+                        response.getAccessToken()
+                );
+
+        ResponseCookie refreshCookie =
+                authCookieUtil.createRefreshTokenCookie(
+                        response.getRefreshToken()
+                );
+
+        httpResponse.addHeader(
+                HttpHeaders.SET_COOKIE,
+                accessCookie.toString()
+        );
+
+        httpResponse.addHeader(
+                HttpHeaders.SET_COOKIE,
+                refreshCookie.toString()
+        );
     }
 }
