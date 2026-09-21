@@ -19,8 +19,8 @@ resilience4j:
 
 login:
   rate-limit:
-    user-limit: 5
-    ip-limit: 10
+    user-limit: 20
+    ip-limit: 20
     refresh-period-seconds: 60
 
 logging:

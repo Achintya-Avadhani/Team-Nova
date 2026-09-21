@@ -203,4 +203,20 @@ public class GlobalExceptionHandler {
                 request
         );
     }
+
+    @ExceptionHandler(ExternalServiceUnavailableException.class)
+    public ResponseEntity<ErrorResponse> handleExternalServiceUnavailable(
+            ExternalServiceUnavailableException ex) {
+
+        return ResponseEntity
+                .status(HttpStatus.SERVICE_UNAVAILABLE)
+                .body(new ErrorResponse(
+                        Instant.now(),
+                        503,
+                        "Service Unavailable",
+                        ex.getMessage(),
+                        "/login",
+                        null
+                ));
+    }
 }
